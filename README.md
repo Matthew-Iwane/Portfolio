@@ -19,9 +19,9 @@
 
 ### Built With
 
-- [React]
-- [Tailwind]
-- [Firebase]
+- React
+- Tailwind
+- Firebase
 
 
 ## Contact
