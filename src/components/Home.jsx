@@ -11,7 +11,7 @@ export const Home = () => {
             My name is Matthew and I am a <span className='text-red-300'>Full Stack Developer</span>
           </h2>
           <p className='text-gray-500 py-4 max-w-md animate-bounce'>
-            I am a computer science student at Boston University currently working on ful-stack application projects.
+            I am a computer science student at Boston University currently working on full-stack application projects.
             I love to build software applications and I enjoy creating UI/UX applications. 
             I mainly use React.js and Tailwind for my frontend and Firebase for the backend.
           </p>

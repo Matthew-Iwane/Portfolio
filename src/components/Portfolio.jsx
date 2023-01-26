@@ -31,7 +31,7 @@ export const Portfolio = () => {
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
-                <p className='py-6'>Here is my work!</p>
+                <p className='py-6 font-thin'>This section consists of both my personal work and collaborative projects. I used Firebase, Supabase, MongoDB and Redis for the backend and React for the frontend. I used various libraries such as Tailwind, Bootstrap, and Material UI to assist with custom user-interfaces.</p>
             </div>
 
             <div 
@@ -40,8 +40,8 @@ export const Portfolio = () => {
                     <div key={id}className='shadow-md shadow-gray-600 rounded-lg'>
                         <img src={src} alt='' className='rounded-md duration-300 hover:scale-105'/>
                         <div className='flex items-center justify-center'>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Demo</button>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Code</button>
+                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-thin'>Demo</button>
+                            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-thin'>Code</button>
                         </div>
                     </div>
                 ))

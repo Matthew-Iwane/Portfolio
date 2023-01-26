@@ -8,15 +8,32 @@ export const About = () => {
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
         </div>
 
-        <p className='text-xl mt-10 '> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore aliquam rerum cupiditate officia rem, expedita aut quos saepe tempore delectus recusandae odio. Molestiae harum cum, voluptatibus nulla laborum illo facilis possimus quia ipsa reiciendis molestias natus quo vel similique earum aperiam, laboriosam illum ipsam doloremque corrupti. Alias, illum possimus.
+        <p className='text-xl mt-10 font-thin'> 
+          I am a computer scientist wanting to work in the Software Engineering/Development field. 
+          I love to create things that people can use and I want to expose myself to other like-minded individuals.
+          Coding is one of my hobbies but I also like to weight-lift and watch anime.
         </p>
+
+        <div className='w-full flex justify-center flex-auto'>
+          <ul className='list-disc  text-xl mt-5 font-thin mx-5'>
+            <p className='font-bold'>Favorite Exercises:</p>
+            <li>Bench Press</li>
+            <li>Deadlift</li>
+            <li>Reverse Bicep Curls</li>
+            <li>Cable Pec Flies</li>
+          </ul>
+
+          <ul className='list-disc text-xl mt-5 font-thin mx-5'>
+            <p className='font-bold'>My Top Anime:</p>
+            <li>Attack On Titan</li>
+            <li>Steins;Gate</li>
+            <li>Erased</li>
+            <li>Guilty Crown</li>
+          </ul>
+        </div>
+
 
         <br/>
-
-        <p className='text-xl'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo laudantium libero quae atque voluptate, nihil obcaecati impedit. Quaerat natus porro aut. Numquam eos nisi sit unde accusantium, voluptas amet quia sed tempore, sapiente nostrum debitis vero fuga quae. Et odit repellendus quis minus corrupti molestias saepe enim repudiandae voluptate!
-        </p>
       </div>
     </div>
   )
