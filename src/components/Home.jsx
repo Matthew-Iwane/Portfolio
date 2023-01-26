@@ -1,5 +1,5 @@
 import React from 'react'
-import heroimg from "../assets/heroimage.png"
+import heroimg from "../assets/astronaut.svg"
 import { HiArrowRight } from 'react-icons/hi'
 
 export const Home = () => {
@@ -10,7 +10,7 @@ export const Home = () => {
           <h2 className='text-4xl sm:text-7xl font-bold'>
             I am a Full Stack Developer
           </h2>
-          <p className='text-gray-500 py-4 max-w-md'>
+          <p className='text-gray-500 py-4 max-w-md animate-bounce'>
             I am a computer science student at Boston University currently working on ful-stack application projects.
             I love to build software applications and I enjoy creating UI/UX applications. 
             I mainly use React.js and Tailwind for my frontend and Firebase for the backend.
