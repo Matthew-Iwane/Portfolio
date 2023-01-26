@@ -2,8 +2,10 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <div name="about" className='w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
-      <div className='font-100 max-w-screen-lg flex flex-col w-full h-fulljustify-center mx-auto p-4'>
+    <div 
+      name="about" 
+      className='w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white py-32'>
+      <div className='max-w-screen-lg flex flex-col w-full h-full justify-center mx-auto p-4'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
         </div>
@@ -31,9 +33,6 @@ export const About = () => {
             <li>Guilty Crown</li>
           </ul>
         </div>
-
-
-        <br/>
       </div>
     </div>
   )
