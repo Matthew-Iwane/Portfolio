@@ -31,8 +31,8 @@ export const NavBar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black px-4 z-10">
         <div>
-            <h1 className="text-4xl font-signature ml-2">
-                Matthew Iwane
+            <h1 className="text-3xl font-signature uppercase font-thin tracking-widest ml-2">
+                <Link to="home" smooth duration={500} className='cursor-pointer'>Matthew Iwane</Link>
             </h1>
         </div>
 
@@ -40,7 +40,7 @@ export const NavBar = () => {
             {links.map(({id,link}) => (
                 <li 
                     key={id}
-                    className="px-4 cursor-pointer capitalize text-gray-500 hover:scale-110 duration-150"
+                    className="px-4 cursor-pointer text-gray-300 hover:scale-110 duration-150 tracking-widest uppercase font-thin"
                 >
                     <Link to={link} smooth duration={500} className="cursor-pointer">
                         {link}
@@ -58,7 +58,7 @@ export const NavBar = () => {
                 {links.map(({id,link}) => (
                 <li 
                     key={id}
-                    className="px-4 cursor-point capitalize py-6 text-4xl"
+                    className="px-4 cursor-point py-6 text-4xl font-thin tracking-widest uppercase"
                 >
                     <Link onClick={() => {setNav(!nav)}} to={link} smooth duration={500} className="cursor-pointer">
                         {link}

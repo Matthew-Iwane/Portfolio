@@ -39,7 +39,7 @@ export const SocialLinks = () => {
 
 
     return (
-        <div className="hidden xl:flex flex-col top-[35%] left-0 fixed ">
+        <div className="hidden xl:flex flex-col top-[35%] left-0 fixed font-thin">
         <ul>
             {links.map(({id, child, href, style, download}) => (
                 <li 

@@ -5,6 +5,8 @@ import js from "../assets/javascript.png"
 import tailwind from "../assets/tailwind.png"
 import reactimg from "../assets/react.png"
 import nextjs from "../assets/nextjs.png"
+import express from "../assets/express.png"
+import node from "../assets/nodejs.png"
 
 export const Experience = () => {
 
@@ -44,17 +46,29 @@ export const Experience = () => {
       src : nextjs,
       title : 'Next.js',
       style: 'shadow-white'
+    },
+    {
+      id : 7,
+      src : express,
+      title : 'Express',
+      style: 'shadow-white'
+    },
+    {
+      id : 7,
+      src : node,
+      title : 'Node.js',
+      style: 'shadow-green-300'
     }
   ]
 
   return (
     <div 
       name="experience" 
-      className='bg-gradient-to-b from-gray-800 to-black w-full md:h-screen'>
+      className='bg-gradient-to-b from-gray-800 to-black py-32'>  
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
 
         <div>
-          <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>Experience</p>
+          <p className='text-4xl font-bold p-2 inline'>EXPERIENCE</p>
           <p className='py-6 font-thin'>These are the technology tools that I have worked with.</p>
         </div>
 
