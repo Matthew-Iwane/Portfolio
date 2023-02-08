@@ -7,9 +7,7 @@ export const Contact = () => {
         message: ''
       }
 
-      const [formDetails, setFormDetails] = useState(formInitialDetails);
-      const [buttonText, setButtonText] = useState('Send');
-      const [status, setStatus] = useState({});
+    const [formDetails, setFormDetails] = useState(formInitialDetails);
 
     const onFormUpdate = (category, value) => {
         setFormDetails({
@@ -17,27 +15,13 @@ export const Contact = () => {
           [category]: value
         })
     }
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setButtonText("Sending...");
-      let response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
-      });
-      setButtonText("Send");
-      let result = await response.json();
-      setFormDetails(formInitialDetails);
-      if (result.code === 200) {
-        setStatus({ succes: true, message: 'Message sent successfully'});
-      } else {
-        setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-      }
-    };
 
+    const handleSubmit = () => {
+      formDetails.firstName = '';
+      formDetails.lastName = '';
+      formDetails.email = '';
+      formDetails.message = '';
+    }
 
   return (
     <div name="contact" className='w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white'>
@@ -49,7 +33,8 @@ export const Contact = () => {
 
             <div className='flex justify-center items-center'>
                 <form 
-                    action='' 
+                    action="https://getform.io/f/a8bcdb1f-02a2-4554-98b2-b04e70360015"
+                    method="POST"
                     className='flex flex-col w-full md:w-1/2'
                     onSubmit={handleSubmit}
                 >
@@ -70,7 +55,7 @@ export const Contact = () => {
                         className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none font-thin mt-4'
                     />
                     <input 
-                        type='text' 
+                        type="email" 
                         name="name"
                         value={formDetails.email}
                         onChange={(e) => onFormUpdate('email', e.target.value)}
@@ -89,13 +74,10 @@ export const Contact = () => {
 
                     <button 
                         type='submit'
-                        className='font-thin text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-4 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'>
-                        {buttonText}
+                        className='font-thin text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-4 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'
+                      >
+                        Send Message!
                     </button>
-
-                    { status.message &&
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                    }
                 </form>
             </div>
         </div>
