@@ -43,7 +43,7 @@ export const Contact = () => {
     <div name="contact" className='w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white'>
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
             <div className='pb-8'>
-                <p className='text-4xl font-bold inline'>CONTACT <span className='text-lg font-normal italic text-red-300'>work in progress</span></p>
+                <p className='text-4xl font-bold inline'>CONTACT</p>
                 <p className='py-6 font-thin '>Send me an email using the form below!</p>
             </div>
 

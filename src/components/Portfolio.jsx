@@ -1,5 +1,8 @@
 import React from 'react'
 import coursesearch from "../assets/portfolio/coursesearch.png"
+import todo from "../assets/portfolio/todo.png"
+import landingpage from "../assets/portfolio/landingpage.png"
+import workout from "../assets/portfolio/workout.png"
 
 export const Portfolio = () => {
     const portfolio = [
@@ -11,15 +14,21 @@ export const Portfolio = () => {
         },
         {
             id: 2,
-            src: coursesearch,
-            demo: "https://bucoursesearch.web.app/",
-            code: "https://github.com/Matthew-Iwane/BUCourseSearch2.0/tree/main"
+            src: todo,
+            demo: "https://github.com/Matthew-Iwane/Todo-List",
+            code: "https://github.com/Matthew-Iwane/Todo-List"
         },
         {
             id: 3,
-            src: coursesearch,
-            demo: "https://bucoursesearch.web.app/",
-            code: "https://github.com/Matthew-Iwane/BUCourseSearch2.0/tree/main"
+            src: landingpage,
+            demo: "https://github.com/Matthew-Iwane/Landing-Page",
+            code: "https://github.com/Matthew-Iwane/Landing-Page"
+        },
+        {
+            id: 4,
+            src: workout,
+            demo: "https://github.com/Matthew-Iwane/Workout-App",
+            code: "https://github.com/Matthew-Iwane/Workout-App"
         },
     ]
 
