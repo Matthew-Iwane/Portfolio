@@ -39,7 +39,7 @@ export const Portfolio = () => {
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>PORTFOLIO</p>
-                <p className='py-6 font-thin'>This section consists of both my personal work and collaborative projects. I used Firebase, Supabase, MongoDB and Redis for the backend and React for the frontend. I used various libraries such as Tailwind, Bootstrap, and Material UI to assist with custom user-interfaces.</p>
+                <p className='py-6 font-light'>This section consists of both my personal work and collaborative projects. I used Firebase, Supabase, MongoDB and Redis for the backend and React for the frontend. I used various libraries such as Tailwind, Bootstrap, and Material UI to assist with custom user-interfaces.</p>
             </div>
 
             <div 
@@ -51,10 +51,10 @@ export const Portfolio = () => {
                             alt='' 
                             className='rounded-md duration-300 hover:scale-110'/>
                         <div className='flex items-center justify-center'>
-                            <button className='w-1/2 px-6 m-4 duration-200 hover:scale-110 font-thin'>
+                            <button className='w-1/2 px-6 m-4 duration-200 hover:scale-110 font-light'>
                                 <a rel="noreferrer" target="_blank" href={demo}>Demo</a>
                             </button>
-                            <button className='w-1/2 px-6 m-4 duration-200 hover:scale-110 font-thin'>
+                            <button className='w-1/2 px-6 m-4 duration-200 hover:scale-110 font-light'>
                                 <a rel="noreferrer" target="_blank" href={code}>Code</a>
                             </button>                        
                         </div>

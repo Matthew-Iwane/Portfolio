@@ -69,7 +69,7 @@ export const Experience = () => {
 
         <div>
           <p className='text-4xl font-bold p-2 inline'>EXPERIENCE</p>
-          <p className='py-6 font-thin'>These are the technology tools that I have worked with.</p>
+          <p className='py-6 font-normal'>These are the technology tools that I have worked with.</p>
         </div>
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
@@ -77,7 +77,7 @@ export const Experience = () => {
             <div key={id} className={`shadow-md hover:scale-110 duration-500 py-6 rounded-lg ${style}`}
             >
                 <img src={src}  alt=''  className='w-20 mx-auto'/>
-                <p className='mt-4 font-thin'>{title}</p>
+                <p className='mt-4 font-light'>{title}</p>
             </div>
           ))}
         </div>

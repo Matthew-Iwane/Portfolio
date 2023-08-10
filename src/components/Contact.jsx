@@ -28,7 +28,7 @@ export const Contact = () => {
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline'>CONTACT</p>
-                <p className='py-6 font-thin '>Send me an email using the form below!</p>
+                <p className='py-6 font-light '>Send me an email using the form below!</p>
             </div>
 
             <div className='flex justify-center items-center'>
@@ -44,7 +44,7 @@ export const Contact = () => {
                         onChange={(e) => onFormUpdate('firstName', e.target.value)}
                         name="name" 
                         placeholder="First Name"
-                        className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none font-thin'
+                        className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none font-normal'
                     />
                     <input 
                         type='text' 
@@ -52,7 +52,7 @@ export const Contact = () => {
                         onChange={(e) => onFormUpdate('lastName', e.target.value)}
                         name="name" 
                         placeholder="Last Name"
-                        className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none font-thin mt-4'
+                        className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none font-normal mt-4'
                     />
                     <input 
                         type="email" 
@@ -60,7 +60,7 @@ export const Contact = () => {
                         value={formDetails.email}
                         onChange={(e) => onFormUpdate('email', e.target.value)}
                         placeholder="Email"
-                        className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none font-thin'
+                        className='my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none font-normal'
                     />
                     <textarea
                         placeholder="Message"
@@ -68,13 +68,13 @@ export const Contact = () => {
                         onChange={(e) => onFormUpdate('message', e.target.value)}
                         name="message"
                         rows="10"
-                        className='p-2 bg-transparent border-2 rounded-md text-white focos:outline-none font-thin max-h-72 min-h-full'
+                        className='p-2 bg-transparent border-2 rounded-md text-white focos:outline-none font-normal max-h-72 min-h-full'
                     >
                     </textarea>
 
                     <button 
                         type='submit'
-                        className='font-thin text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-4 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'
+                        className='font-bold text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-4 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'
                       >
                         Send Message!
                     </button>

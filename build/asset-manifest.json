@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2fcde49.css",
-    "main.js": "/static/js/main.2a7e7058.js",
+    "main.css": "/static/css/main.a8793603.css",
+    "main.js": "/static/js/main.6dc68e61.js",
     "static/media/landingpage.png": "/static/media/landingpage.b3306c4f2d3148a110de.png",
     "static/media/workout.png": "/static/media/workout.ee18ac0ea6c290d1af25.png",
     "static/media/todo.png": "/static/media/todo.2874a03e887d86a341f2.png",
@@ -13,13 +13,13 @@
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/express.png": "/static/media/express.39a0f4c3d981885c64f8.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
-    "static/media/astronaut.svg": "/static/media/astronaut.c79c501dd2889df81e3dbc0af6a8a64c.svg",
+    "static/media/astronaut.svg": "/static/media/astronaut.0df85da8f0621e64aba6a1164338d1d8.svg",
     "index.html": "/index.html",
-    "main.d2fcde49.css.map": "/static/css/main.d2fcde49.css.map",
-    "main.2a7e7058.js.map": "/static/js/main.2a7e7058.js.map"
+    "main.a8793603.css.map": "/static/css/main.a8793603.css.map",
+    "main.6dc68e61.js.map": "/static/js/main.6dc68e61.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2fcde49.css",
-    "static/js/main.2a7e7058.js"
+    "static/css/main.a8793603.css",
+    "static/js/main.6dc68e61.js"
   ]
 }

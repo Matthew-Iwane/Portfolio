@@ -13,7 +13,7 @@ export const Home = () => {
           <h2 className='text-4xl md:text-6xl font-bold mt-32'>
             My name is Matthew and I am a <span className='text-red-300'>Full Stack Developer</span>
           </h2>
-          <p className='text-gray-400 py-4 max-w-md font-thin'>
+          <p className='text-gray-400 py-4 max-w-md font-normal'>
             I am a computer science student at Boston University currently working on full-stack application projects.
             I love to build software applications and I enjoy creating UI/UX applications. 
             I mainly use React.js and Tailwind for my frontend and Firebase for the backend.
@@ -24,7 +24,7 @@ export const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 mt-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer font-thin"
+              className="group text-white w-fit px-6 py-3 mt-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer font-bold"
             >
               Portfolio
               <span className="group-hover:translate-x-3 duration-300">

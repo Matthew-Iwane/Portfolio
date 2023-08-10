@@ -32,11 +32,10 @@ export const SocialLinks = () => {
             child: (
                 <>Resume <BsFillPersonLinesFill size={30}/></>
             ),
-            href: "/MatthewIwaneRESUME.pdf",
+            href: "/Matthew_Iwane_RESUME.pdf",
             style: 'rounded-br-md',
         }
     ]
-
 
     return (
         <div className="hidden xl:flex flex-col top-[35%] left-0 fixed font-thin">
