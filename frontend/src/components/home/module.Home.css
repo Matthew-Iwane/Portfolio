@@ -1,0 +1,25 @@
+.hero-section {
+    height: 90vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro span {
+    display: block;
+    color: rgb(250, 82, 82);
+}
+
+.astronaut {
+    width: 400px;
+    height: 400px;
+
+    animation: bouncing-astronaut 3s ease-in-out infinite;
+}
+
+@keyframes bouncing-astronaut {
+    0% {transform: translateY(-20px);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(-20px);}
+  }
