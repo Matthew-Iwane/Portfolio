@@ -1,0 +1,32 @@
+{
+    "projects" : [
+        {
+            "id": 1,
+            "project_name": "Boston University Course Search"
+        },
+        {
+            "id": 2,
+            "project_name": "Art Book Collective"
+        },
+        {
+            "id": 3,
+            "project_name": "Exercise Tracker"
+        },
+        {
+            "id": 4,
+            "project_name": "AimLabz"
+        }
+    ],
+    "experience" : [
+        {
+            "id" : 10,
+            "company" : "Open Source Recruiter"
+        }
+    ],
+    "tools" : [
+        {
+            "id" : 20,
+            "name": "Javascript/Typescript"
+        }
+    ]
+}
