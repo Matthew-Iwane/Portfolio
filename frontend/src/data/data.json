@@ -2,19 +2,33 @@
     "projects" : [
         {
             "id": 1,
-            "project_name": "Boston University Course Search"
+            "project_name": "Boston University Course Search",
+            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         },
         {
             "id": 2,
-            "project_name": "Art Book Collective"
+            "project_name": "Art Book Collective",
+            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         },
         {
             "id": 3,
-            "project_name": "Exercise Tracker"
+            "project_name": "Exercise Tracker",
+            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         },
         {
             "id": 4,
-            "project_name": "AimLabz"
+            "project_name": "AimLabz",
+            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
+        },
+        {
+            "id": 5,
+            "project_name": "Job Board",
+            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         }
     ],
     "experience" : [

@@ -1,7 +1,5 @@
-import HeroSection from "../components/home/HeroSection";
-import Projects from "../components/home/ProjectSection";
-
-import "../components/home/module.Home.css";
+import HeroSection from "../components/home/hero/HeroSection";
+import Projects from "../components/home/projects/ProjectSection";
 
 const Home = () => {
   return (

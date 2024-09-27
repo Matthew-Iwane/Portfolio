@@ -1,4 +1,5 @@
-import astronaut from "../../assets/astronaut.svg"
+import astronaut from "../../../assets/astronaut.svg"
+import "./module.HeroSection.css"
 
 const HeroSection = () => {
   return (
