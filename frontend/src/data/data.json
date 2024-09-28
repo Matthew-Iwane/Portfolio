@@ -4,31 +4,36 @@
             "id": 1,
             "project_name": "Boston University Course Search",
             "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
+            "image": "../../../assets/projects/bu-course-search.png"
         },
         {
             "id": 2,
             "project_name": "Art Book Collective",
             "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
+            "image": "../assets/projects/bu-course-search.png"
         },
         {
             "id": 3,
             "project_name": "Exercise Tracker",
             "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
+            "image": "../assets/projects/bu-course-search.png"
         },
         {
             "id": 4,
             "project_name": "AimLabz",
             "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
+            "image": "../assets/projects/bu-course-search.png"
         },
         {
             "id": 5,
             "project_name": "Job Board",
             "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
+            "image": "../assets/projects/bu-course-search.png"
         }
     ],
     "experience" : [
