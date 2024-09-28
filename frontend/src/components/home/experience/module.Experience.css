@@ -3,9 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.project-container {
-    background-color: rgba(224, 224, 224, 0.336);
-
+.experience-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,17 +12,19 @@
     width: 100%;
     height: auto;
 
+    box-shadow: 10px 5px 10px 10px rgba(0, 0, 0, 0.250);
+
     padding-top: 2em;
     padding-bottom: 4em;
 }
 
-#projects {
+#experience {
     font-size: 34px;
     font-weight: 300;
     text-transform: uppercase;
 
     padding: .4em;
-    margin-top: 1em;
+    margin: 1em 0;
 
     width: 50%;
 }
@@ -55,9 +55,11 @@
     overflow: hidden;
 
     padding-bottom: 1em;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.250);
 }
 
+.card:hover {
+    box-shadow: 4px 2px 2px rgb(224, 224, 224);
+}
 
 .card-image {
     height: 300px;

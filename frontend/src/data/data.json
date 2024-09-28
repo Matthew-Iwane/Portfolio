@@ -40,7 +40,31 @@
     "experience" : [
         {
             "id" : 10,
-            "company" : "Open Source Recruiter"
+            "company" : "Open Source Recruiter",
+            "years" : "March 2021 - April 2023",
+            "position" : "Software Engineer",
+            "tools" : ["React", "Javascript", "HTML/CSS", "Scrapy", "Python"]
+        },
+        {
+            "id" : 11,
+            "company" : "SkillYah",
+            "years" : "August 2023 - Present",
+            "position" : "Software Engineer",
+            "tools" : ["React", "Typescript", "Bootstrap"]
+        },
+        {
+            "id" : 12,
+            "company" : "FORGE Design Studios",
+            "years" : "July 2023 - September 2023",
+            "position" : "Frontend Engineer",
+            "tools" : ["React", "Javascript", "HTML/CSS", "Bootstrap"]
+        },
+        {
+            "id" : 3,
+            "company" : "SkyIT GBCS Group",
+            "years" : "May 2023 - July 2023",
+            "position" : "Software Engineer Team Lead & Frontend Engineer",
+            "tools" : ["React", "Typescript", "Bootstrap"]
         }
     ],
     "tools" : [

@@ -1,7 +1,7 @@
-import "./module.ProjectSection.css";
+import "./module.Experience.css";
 import data from "../../../data/data.json";
 
-// Project Images
+// Experience Images
 import bu_course_search from "../../../assets/projects/bu_course_search/bu-course-search.png"
 import exercise_tracker from "../../../assets/projects/exercise_tracker/exercise-tracker.png"
 import art_book_collective from "../../../assets/projects/spark/art-book-collective.png"
@@ -16,19 +16,19 @@ const getImageSrc = {
   "Little Lemon" : little_lemon
 }
 
-const ProjectSection = () => {
+const Experience = () => {
   return (
-    <div className="project-container">
-      <h2 id="projects">Personal Projects &#128640;</h2>
+    <div className="experience-container">
+      <h2 id="experience">Professional Experience &#128187;</h2>
       <div className="cards-container">
-        {data.projects.map((p) => (
-          <div className="card" key={p.id}>
-            {<img className="card-image" src={getImageSrc[p.project_name] ? getImageSrc[p.project_name] :  coming_soon} alt="card image" />}
-            {<div className="card-name">{p.project_name}</div>}
+        {data.experience.map((experience) => (
+          <div className="card" key={experience.id}>
+            {<img className="card-image" src={getImageSrc[experience.company] ? getImageSrc[experience.company] :  coming_soon} alt="card image" />}
+            {<div className="card-name">{experience.company}</div>}
             {
               <div className="tags-container">
-                {p.project_tools.map((tool) => (
-                  <div key={p.id} className="tags">
+                {experience.tools.map((tool) => (
+                  <div key={experience.id} className="tags">
                     {tool}
                   </div>
                 ))}
@@ -41,4 +41,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default Experience;
