@@ -4,36 +4,37 @@
             "id": 1,
             "project_name": "Boston University Course Search",
             "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
-            "image": "../../../assets/projects/bu-course-search.png"
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         },
         {
             "id": 2,
             "project_name": "Art Book Collective",
-            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
-            "image": "../../../assets/projects/bu-course-search.png"
+            "project_tools": ["React", "Javascript", "Python", "PostgreSQL", "Bootstrap","Prisma ORM", "Node.js", "Express", "Tailwind"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         },
         {
             "id": 3,
             "project_name": "Exercise Tracker",
-            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
-            "image": "../../../assets/projects/bu-course-search.png"
+            "project_tools": ["React", "MongoDB/Mongoose", "Node.js", "Express", "Javascript"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         },
         {
             "id": 4,
             "project_name": "AimLabz",
-            "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
-            "image": "../../../assets/projects/bu-course-search.png"
+            "project_tools": ["React", "Javascript", "MongoDB", "HTML/CSS"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         },
         {
             "id": 5,
             "project_name": "Job Board",
             "project_tools": ["React", "Javascript", "Python", "Supabase", "HTML/CSS", "Firebase", "Bootstrap"],
-            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0",
-            "image": "../../../assets/projects/bu-course-search.png"
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
+        },
+        {
+            "id": 6,
+            "project_name": "Little Lemon",
+            "project_tools": ["React", "Javascript", "HTML/CSS", "Bootstrap"],
+            "link": "https://github.com/Matthew-Iwane/BUCourseSearch2.0"
         }
     ],
     "experience" : [
