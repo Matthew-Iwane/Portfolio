@@ -4,24 +4,34 @@
     box-sizing: border-box;
 }
 .project-container {
-    margin: 4em 12em;
+    background-color: rgba(224, 224, 224, 0.336);
 
-    border: 1px solid rgba(236, 236, 236, 0.568);
-    border-radius: 8px;
-    box-shadow: 10px 5px 5px 5px rgb(207, 207, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
 }
 
 #projects {
-    font-size: 36px;
-    font-weight: 800;
-    padding: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: .4em 8em;
+    margin-top: 1em;
 }
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     place-items: center;
 
+    width: 50%;
     gap: 4em;
 
     padding: 1em;
@@ -49,14 +59,14 @@
 }
 
 .card-image {
-    height: 330px;
+    height: 400px;
 }
 
 .card-name {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 
-    padding: 1em 0;
+    padding: 1em 1em;
 }
 
 .tags-container {
@@ -74,4 +84,10 @@
     border: 1px solid rgb(191, 191, 191);
     border-radius: 12px;
     padding: 4px;
+}
+
+.tags:hover {
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
 }

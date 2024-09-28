@@ -1,6 +1,7 @@
 /* Hero Section */
 .hero-section {
     height: 90vh;
+    width: 100%;
     
     display: flex;
     justify-content: center;
@@ -9,23 +10,23 @@
     box-shadow: 10px 5px 5px 5px rgb(207, 207, 207);
 
     border: 1px solid rgba(236, 236, 236, 0.568);
-    border-radius: 8px;
-
-    margin: 0 12em;
-
-    background-color: rgb(252, 252, 252);
 }
 
-.intro h1{
+.hero-container {
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
     font-size: 44px; 
     font-weight: 600;
-    padding: 2em
 }
 
-.intro span {
-    font-size: 38px; 
-    font-weight: 800;
-    display: block;
+.subheading span {
     color: rgb(250, 82, 82);
 }
 
