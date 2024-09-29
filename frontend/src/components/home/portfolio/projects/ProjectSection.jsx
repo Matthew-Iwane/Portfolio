@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./module.ProjectSection.css";
 
 import data from "../../../../data/data.json";
@@ -22,7 +24,7 @@ const ProjectSection = () => {
     <div className="projects-container">
       <div className="cards-container">
         {data.projects.map((p) => (
-          <div className="card" key={p.id}>
+          <Link to={p.link} target="_blank" rel="noopener noreferrer" className="card" key={p.id}>
             {<img className="card-image" src={getImageSrc[p.project_name] ? getImageSrc[p.project_name] :  coming_soon} alt="card image" />}
             {<div className="card-name">{p.project_name}</div>}
             {
@@ -34,7 +36,7 @@ const ProjectSection = () => {
                 ))}
               </div>
             }
-          </div>
+          </Link>
         ))}
       </div>
     </div>

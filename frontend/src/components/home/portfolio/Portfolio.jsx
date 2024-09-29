@@ -20,7 +20,7 @@ const Portfolio = () => {
 
     return (
         <div className="portfolio-section">
-            <div id="btn-text"><span id="click-text">Click</span> on a <span id="tab-text">tab</span> to change <span id="cards-text">cards!</span></div>
+            <div id="btn-text"><span id="click-text">Click</span> on a <span id="tab-text">tab below</span> to change the <span id="cards-text">cards!</span></div>
             <div className="portfolio-buttons">
                 <div onClick={handleProjectsClick} id="projects" className={toggleProjects ? "tab-active" : "not-active"}>Projects &#128640;</div>
                 <div onClick={handleExperienceClick} id="experience" className={toggleExperience ? "tab-active" : "not-active"}>Experience &#128187;</div>
