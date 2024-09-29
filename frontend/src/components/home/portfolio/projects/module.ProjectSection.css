@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-.experience-container {
+
+.projects-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,23 +13,22 @@
     width: 100%;
     height: auto;
 
-    box-shadow: 10px 5px 10px 10px rgba(0, 0, 0, 0.250);
-
-    padding-top: 2em;
     padding-bottom: 4em;
 }
 
-#experience {
-    font-size: 34px;
+#projects {
+    font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
 
     padding: .4em;
-    margin: 1em 0;
+    margin-top: 1em;
 
     width: 50%;
 }
 
+
+/* Cards */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
@@ -55,11 +55,15 @@
     overflow: hidden;
 
     padding-bottom: 1em;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.250);
+
+    cursor: pointer;
 }
 
 .card:hover {
-    box-shadow: 4px 2px 2px rgb(224, 224, 224);
+    border: 1px solid rgba(99, 99, 99, 0.596);
 }
+
 
 .card-image {
     height: 300px;

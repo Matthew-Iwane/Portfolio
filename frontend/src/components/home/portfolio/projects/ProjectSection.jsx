@@ -1,13 +1,14 @@
 import "./module.ProjectSection.css";
-import data from "../../../data/data.json";
+
+import data from "../../../../data/data.json";
 
 // Project Images
-import bu_course_search from "../../../assets/projects/bu_course_search/bu-course-search.png"
-import exercise_tracker from "../../../assets/projects/exercise_tracker/exercise-tracker.png"
-import art_book_collective from "../../../assets/projects/spark/art-book-collective.png"
-import little_lemon from "../../../assets/projects/little_lemon/little_lemon_hero.png"
+import bu_course_search from "../../../../assets/projects/bu_course_search/bu-course-search.png"
+import exercise_tracker from "../../../../assets/projects/exercise_tracker/exercise-tracker.png"
+import art_book_collective from "../../../../assets/projects/spark/art-book-collective.png"
+import little_lemon from "../../../../assets/projects/little_lemon/little_lemon_hero.png"
 
-import coming_soon from "../../../assets/projects/coming_soon.jpg"
+import coming_soon from "../../../../assets/projects/coming_soon.jpg"
 
 const getImageSrc = {
   "Boston University Course Search" : bu_course_search,
@@ -18,8 +19,7 @@ const getImageSrc = {
 
 const ProjectSection = () => {
   return (
-    <div className="project-container">
-      <h2 id="projects">Personal Projects &#128640;</h2>
+    <div className="projects-container">
       <div className="cards-container">
         {data.projects.map((p) => (
           <div className="card" key={p.id}>
