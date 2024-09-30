@@ -1,6 +1,14 @@
+import { Link } from "react-router-dom"
+
 import astronaut from "../../../assets/astronaut.svg";
-import arrow_down from "../../../assets/arrow_down.svg"
+import { RxDoubleArrowDown } from "react-icons/rx";
+
+import { FaLinkedinIn } from "react-icons/fa";
+import { PiGithubLogoFill } from "react-icons/pi";
+import { IoMdMail } from "react-icons/io";
+
 import "./module.HeroSection.css";
+import "../../shared/module.Shared.css"
 
 const HeroSection = () => {
   return (
@@ -18,12 +26,18 @@ const HeroSection = () => {
               <span>Machine Learning</span> concepts as well. Enjoy my personal
               portfolio!
             </p>
+
+            <div className="social-links">
+              <Link to="https://www.linkedin.com/in/matthew-iwane/" target="_blank"><FaLinkedinIn /></Link>
+              <Link to="https://github.com/Matthew-Iwane" target="_blank"><PiGithubLogoFill /></Link>
+              <Link to="mailto:mattiwane.jobs@gmail.com"><IoMdMail /></Link>
+            </div>
           </div>
         </div>
 
         <img src={astronaut} alt="SVG of an astronaut" className="astronaut" />
       </div>
-      <img src={arrow_down} alt="Arrow pointing down" className="arrow-down"/>
+      <RxDoubleArrowDown className="arrow-down" />
     </div>
   );
 };

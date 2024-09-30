@@ -1,0 +1,19 @@
+.social-links {
+    margin-top: 1em;
+
+    display: flex;
+    gap: 2em;
+}
+
+.social-links a > * {
+    width: 48px;
+    height: 48px;
+
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+
+.social-links a > *:hover {
+    transform: translateY(-6px);
+    transition: 0.08s;
+}
