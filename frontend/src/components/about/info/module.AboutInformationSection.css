@@ -13,6 +13,13 @@
 .about-information-container {
     width: 50%;
     height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    padding: 4em 0;
 }
 
 /* Resume */
@@ -43,4 +50,44 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+/* Modal Section */
+.modal-item-button {
+    font-weight: 800;
+    font-size: 24px;
+
+    width: 100%;
+
+    padding: 1em 2em;
+
+    margin: 1em 0;
+
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background-color: white;
+}
+
+.modal-item-button:hover {
+    background-color: aliceblue;
+}
+
+
+#resume-button {
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 8px;
+
+    background-color: rgb(245, 245, 245);
+    padding: 1em 2em;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+#resume-button:hover {
+    background-color: aliceblue;
 }
