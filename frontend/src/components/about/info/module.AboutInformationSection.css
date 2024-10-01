@@ -44,60 +44,50 @@
 }
 
 .resume-text-container {
+    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+/* Modal Section */
+.modal-item-button {
+    font-weight: 800;
+    font-size: 24px;
+
+    width: 100%;
+
+    padding: 1em 2em;
+
+    margin: 1em 0;
+
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background-color: white;
+}
+
+.modal-item-button:hover {
+    background-color: aliceblue;
+}
+
 
 #resume-button {
     border: 1px solid rgb(211, 211, 211);
     border-radius: 8px;
 
+    background-color: rgb(245, 245, 245);
     padding: 1em 2em;
 
     font-size: 24px;
 
     cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 0.6em;
 }
 
-/* Accordion Section */
-.accordion-container {
-    width: 50%;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 4em 0;
-
-    gap: 2em;
-}
-
-.accordion-container h2 {
-    font-size: 32px;
-}
-
-/* Certification Section */
-.certification-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
-    place-content: center;
-}
-
-/* Social Links Sections */
-.social-links-container {
-    display: flex;
-    flex-direction: column;
-
-    padding: 4em 0;
-}
-
-.social-links-container h2 {
-    font-size: 34px;
+#resume-button:hover {
+    background-color: aliceblue;
 }

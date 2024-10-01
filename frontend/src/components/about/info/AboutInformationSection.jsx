@@ -23,28 +23,23 @@ const AboutInformationSection = () => {
             <div className="about-information-container">
                 <div className="resume-image-container">
                     <img src={resume} alt="Matthew Iwane resume" id="resume" />
+                    <a id="resume-button">View Resume</a>
                 </div>
+
                 <div className="resume-text-container">
-                    <Link to={resume_pdf} target="_blank" id="resume-button">View Resume <span><BsArrowUpRight /></span></Link>
-                    <p>View my resume by clicking this button or scroll down for more information about my resume!</p>
+                    <h2 className="resume-header">Companies I have worked for:</h2>
+                    {data.experience.map((e) => (
+                        <button key={e.id} className="modal-item-button">
+                            {e.company}
+                        </button>
+                    ))}
                 </div>
             </div>
 
-            <div className="accordion-container">
-                <div className="company-information-container">
-                    <h2 >Company Information &#128188;</h2>
-                </div>
-
-                <h2>Professional Certifications &#128196;</h2>
-            </div>
-            
-            <div className="social-links-container">
-                <h2>Social Links &#128173;</h2>
-                <div className="social-links">
-                    <Link to="https://www.linkedin.com/in/matthew-iwane/" target="_blank"><FaLinkedinIn /></Link>
-                    <Link to="https://github.com/Matthew-Iwane" target="_blank"><PiGithubLogoFill /></Link>
-                    <Link to="mailto:mattiwane.jobs@gmail.com"><IoMdMail /></Link>
-                </div>
+            <div className="social-links">
+                <Link to="https://www.linkedin.com/in/matthew-iwane/" target="_blank"><FaLinkedinIn /></Link>
+                <Link to="https://github.com/Matthew-Iwane" target="_blank"><PiGithubLogoFill /></Link>
+                <Link to="mailto:mattiwane.jobs@gmail.com"><IoMdMail /></Link>
             </div>
         </div>
     )
