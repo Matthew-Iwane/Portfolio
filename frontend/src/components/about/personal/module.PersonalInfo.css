@@ -1,0 +1,39 @@
+/* Personal Information Section */
+.personal-information-section {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 6em 0;
+
+    box-shadow: 2px -4px 4px 4px rgb(168, 168, 168);;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 33%;
+
+    gap: 1em;
+}
+
+.personal-information-section h2 {
+    font-size: 40px;
+}
+
+.personal-information-container ul li {
+    list-style: none;
+    font-size: 28px;
+    
+    padding: 1em 2em;
+
+    margin: 1em 0;
+    
+    border: 1px solid black;
+    border-radius: 100px;
+}

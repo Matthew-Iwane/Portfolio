@@ -10,6 +10,8 @@ import { IoMdMail } from "react-icons/io";
 import "./module.HeroSection.css";
 import "../../shared/module.Shared.css"
 
+import { motion } from "framer-motion"
+
 const HeroSection = () => {
   return (
     <div className="hero-section">
@@ -28,9 +30,29 @@ const HeroSection = () => {
             </p>
 
             <div className="social-links">
-              <Link to="https://www.linkedin.com/in/matthew-iwane/" target="_blank"><FaLinkedinIn /></Link>
-              <Link to="https://github.com/Matthew-Iwane" target="_blank"><PiGithubLogoFill /></Link>
-              <Link to="mailto:mattiwane.jobs@gmail.com"><IoMdMail /></Link>
+              <motion.a
+                href="https://www.linkedin.com/in/matthew-iwane/"
+                target="_blank"
+                // transition={{ delay: 1 }}
+                whileHover={{ translateY: "-10px" }}
+              >
+                <FaLinkedinIn />
+              </motion.a>
+
+              <motion.a
+                href="https://github.com/Matthew-Iwane"
+                target="_blank"
+                whileHover={{ translateY: "-10px" }}
+              >
+                <PiGithubLogoFill />
+              </motion.a>
+
+              <motion.a
+                href="mailto:mattiwane.jobs@gmail.com"
+                whileHover={{ translateY: "-10px" }}
+              >
+                <IoMdMail />
+              </motion.a>
             </div>
           </div>
         </div>

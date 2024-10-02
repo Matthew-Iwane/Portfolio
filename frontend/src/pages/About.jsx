@@ -1,5 +1,6 @@
 import AboutHeroSection from "../components/about/hero/AboutHeroSection";
 import AboutInformationSection from "../components/about/info/AboutInformationSection";
+import PersonalInfo from "../components/about/personal/PersonalInfo";
 
 
 const About = () => {
@@ -7,6 +8,7 @@ const About = () => {
     <div>
       <AboutHeroSection />
       <AboutInformationSection />
+      <PersonalInfo />
     </div>
   );
 };
