@@ -4,10 +4,10 @@ import pfp from "../../../assets/pfp/pfp.jpg"
 import "./module.AboutHeroSection.css"
 import "../../shared/module.Shared.css"
 
-import { motion, px } from "framer-motion"
+import { motion } from "framer-motion"
 
 
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
@@ -63,6 +63,7 @@ const AboutHeroSection = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}
                     whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                 />
             </div>
         </div>

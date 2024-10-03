@@ -66,5 +66,6 @@
             "position" : "Software Engineer Team Lead & Frontend Engineer",
             "tools" : ["React", "Typescript", "Bootstrap"]
         }
-    ]
+    ],
+    "tags": ["React", "Typescript", "Next.js", "HTML/CSS", "Node", "Express", "Python", "Bootstrap", "PostgreSQL", "SQL"]
 }

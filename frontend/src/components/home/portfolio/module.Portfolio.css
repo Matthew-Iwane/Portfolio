@@ -59,19 +59,41 @@
 }
 
 /* Media Queries */
+@media screen and (max-width: 1000px) {
+    .portfolio-buttons div {
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .portfolio-buttons {
         grid-template-columns: 1fr;
     }
     .portfolio-buttons div {
-        font-size: 24px;
+        font-size: 26px;
     }
 }
+
 @media screen and (max-width: 600px) {
     #btn-text {
         font-size: 18px;
     }
-    /* .portfolio-buttons div {
+}
+
+@media screen and (max-width: 460px) {
+    #btn-text {
+        font-size: 16px;
+    }
+    .portfolio-buttons div {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #btn-text {
+        font-size: 12px;
+    }
+    .portfolio-buttons div {
         font-size: 18px;
-    } */
+    }
 }

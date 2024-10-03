@@ -1,18 +1,25 @@
 import "./module.PersonalInfo.css"
 
+// import { motion } from "framer-motion"
+
+import { useState } from "react";
+import { Reorder } from "framer-motion";
+import { Item } from "./Item";
+
+const initialItems = ["323 356 4113 📞", "Tokyo, Japan 🗾", "Willing to commute 🚗", "Software Engineer 💻", "Product Manager 📋", "23 Years Old 🍰"];
+
 const PersonalInfo = () => {
+    const [items, setItems] = useState(initialItems);
+
     return (
         <div className="personal-information-section">
-            <div className="info-container">
+            <div className="info-container personal-information-container">
                 <h2>Personal Information &#128173;</h2>
-                <div className="personal-information-container">
-                    <ul>
-                        <li>323 356 4113 &#128241;</li>
-                        <li>Tokyo, Japan &#127843;</li>
-                        <li>Willing to commute &#128663;</li>
-                        <li>23 Years Old</li>
-                    </ul>
-                </div>
+                <Reorder.Group axis="y" onReorder={setItems} values={items}>
+                    {items.map((item) => (
+                       <Item key={item} item={item} />
+                    ))}
+                </Reorder.Group>
             </div>
         </div>
     )

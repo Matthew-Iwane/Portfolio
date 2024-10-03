@@ -9,14 +9,19 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 import { motion } from "framer-motion"
 
-import meta from "../../../assets/certifications/meta.png"
-import deeplearningai from "../../../assets/certifications/deeplearningai.png"
+import meta from "../../../assets/certifications/meta-cert.png"
+import deeplearningai from "../../../assets/certifications/dlai.png"
 
 const AboutInformationSection = () => {
     return (
-        <div className="about-information-section">
+        <div
+            className="about-information-section">
+            <h2>Resume + Certifications &#128196;</h2>
+            <p><span>Click</span> on a <span>card</span> to <span>view</span> more about the <span>certificate</span>!</p>
+
+
             <div className="about-information-container">
-                <div className="resume-image-container">
+                <div className="resume-container">
                     <motion.img
                         src={resume}
                         alt="Matthew Iwane resume"
@@ -24,31 +29,35 @@ const AboutInformationSection = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4 }}
+                        viewport={{
+                            once: true
+                        }}
                     />
-                </div>
-                <div className="resume-text-container">
                     <motion.a
                         href={resume_pdf}
                         target="_blank"
                         id="resume-button"
                         whileHover={{ scale: 1.1 }}
+
                     >
                         View Resume <span><BsArrowUpRight /></span>
                     </motion.a>
                 </div>
-            </div>
 
-
-            <div className="certification-section">
-                <h2>Professional Certifications &#128196;</h2>
-                
-                <p><span>Click</span> on a <span>card</span> to <span>view</span> more about the <span>certificate</span>!</p>
+                <p id="cert-cards-desc"><span>Click</span> on a <span>card</span> to <span>view</span> more about the <span>certificate</span>!</p>
                 <div className="certification-cards-container">
+
                     <motion.a
                         className="certification-card"
                         target="_blank"
                         href="https://www.coursera.org/account/accomplishments/professional-cert/2YNFD9M9S8ZB"
                         whileHover={{ scale: 1.1 }}
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4 }}
+                        viewport={{
+                            once: true
+                        }}
                     >
                         <img src={meta} alt="image of a programming tool icon" className="icon-img" />
                     </motion.a>
@@ -58,6 +67,12 @@ const AboutInformationSection = () => {
                         target="_blank"
                         href="https://www.coursera.org/account/accomplishments/specialization/SEBLCZQMNAVV"
                         whileHover={{ scale: 1.1 }}
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4 }}
+                        viewport={{
+                            once: true
+                        }}
                     >
                         <img src={deeplearningai} alt="image of a programming tool icon" className="icon-img" />
                     </motion.a>
