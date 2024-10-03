@@ -1,12 +1,14 @@
 /* Hero Section */
 .hero-section {
-    height: 78vh;
+    height: auto;
     width: 100%;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    padding: 4em 0;
 
     box-shadow: 10px 5px 5px 5px rgb(207, 207, 207);
 
@@ -61,4 +63,86 @@
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+    .hero-container {
+        width: 65%;
+    }
+
+    .heading h1{
+        font-size: 34px; 
+    }
+
+    .arrow-down {
+        width: 60px;
+        height: 60px;
+        margin-top: 4em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        width: 75%;
+    }
+
+    .astronaut {
+        width: 300px;
+        height: 300px;
+    }
+
+    .subheading {
+        font-size: 12px;
+    }
+    .arrow-down {
+        width: 50px;
+        height: 50px;
+        margin-top: 4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        width: 85%;
+    }
+
+    .astronaut {
+        width: 250px;
+        height: 250px;
+    }
+}  
+
+@media screen and (max-width: 600px) {
+    .heading h1 {
+        font-size: 20px;
+    }
+
+    .astronaut {
+        width: 200px;
+        height: 200px;
+    }
+}  
+
+@media screen and (max-width: 425px) {
+    .heading h1{
+        font-size: 30px;
+    }
+    .subheading {
+        font-size: 16px;
+    }
+    .astronaut {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .heading h1{
+        font-size: 20px;
+    }
+    .subheading {
+        font-size: 12px;
+    }
 }

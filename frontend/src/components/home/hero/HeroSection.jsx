@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 import astronaut from "../../../assets/astronaut.svg";
 import { RxDoubleArrowDown } from "react-icons/rx";

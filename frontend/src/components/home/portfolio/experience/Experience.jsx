@@ -18,6 +18,8 @@ import mongodb from "../../../../assets/icons/mongodb.png"
 import mysql from "../../../../assets/icons/mysql.png"
 import figma from "../../../../assets/icons/figma.png"
 
+import { motion } from "framer-motion"
+
 const getImageSrc = [
   react, typescript, nextjs, 
   graphql, python, node, 
@@ -26,16 +28,40 @@ const getImageSrc = [
   bootstrap, tailwind, figma
 ]
 
+const ExperienceVariants = {
+  initial:{
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index
+    }
+  })
+}
+
 
 const Experience = () => {
   return (
     <div className="experience-container">
       <div className="experience-cards-container">
         {getImageSrc.map((img, id) => (
-          <div className="experience-card" key={id}>
-            <img src={img} alt="image of a programming tool icon" className="icon-img"/>
-
-          </div>
+          <motion.div 
+            className="experience-card" 
+            key={id}
+            variants={ExperienceVariants}
+            initial="initial"
+            whileInView="animate"
+            custom={id}
+            viewport={{
+              once: true
+            }}
+            whileHover={{scale: 1.1}}
+          >
+            <img src={img} alt="image of a programming tool icon" className="experience-img"/>
+          </motion.div>
         ))}
       </div>
     </div>
