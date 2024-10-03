@@ -29,11 +29,12 @@
 .personal-information-container ul li {
     display: flex;
     justify-content: space-between;
-
-    list-style: none;
-    font-size: 28px;
+    align-items: center;
     
-    padding: 1em 2em;
+    list-style: none;
+    font-size: 22px;
+    
+    padding: 0.8em 2em;
 
     margin: 1em 0;
     
@@ -45,6 +46,14 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#grab-svg {
+    cursor: grab;
+}
+
+#grab-svg:active {
+    cursor: grabbing;
 }
 
 /* Media Queries */

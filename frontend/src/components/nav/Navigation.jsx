@@ -6,13 +6,13 @@ import { RxCross1 } from "react-icons/rx";
 
 import { useState } from "react"
 
-// import { animate, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  function handleClick() {  
+  function handleClick() {
     setIsOpen(!isOpen)
   }
 
@@ -27,6 +27,25 @@ export const Navigation = () => {
   //   }
   // }
 
+  const sidebar = {
+    open: () => ({
+      clipPath: `circle(1000px at 100vw 0)`,
+      transition: {
+        type: "spring",
+        stiffness: 40,
+        restDelta: 1,
+      },
+    }),
+    closed: {
+      clipPath: "circle(0px at 100vw 0)",
+      transition: {
+        type: "spring",
+        stiffness: 400,
+        damping: 40,
+      },
+    },
+  };
+
   return (
     <div className="nav-section">
       <div className="nav-container">
@@ -39,26 +58,26 @@ export const Navigation = () => {
           <NavLink to="about">About</NavLink>
         </nav>
 
-        <nav 
+        <motion.nav
           className="hamburger-menu"
-          // variants={SidebarVarients}
-          // initial="inital"
-          // whileInView="animate"
+          animate={isOpen ? "open" : "closed"}
+        // variants={SidebarVarients}
+        // initial="inital"
+        // whileInView="animate"
         >
-          {isOpen ? (
-            <div className="sidebar-nav-container">
-              <div className="sidebar-nav">
-                <RxCross1 onClick={handleClick}  className="hamburger-menu-button"/>
-                <div className="sidebar-nav-items">
-                  <NavLink onClick={handleClick} to="/">Home</NavLink>
-                  <NavLink onClick={handleClick} to="about">About</NavLink>
-                </div>
-              </div>
+          <div className="sidebar-nav-container">
+            <div className="hamburger-menu-button-div">
+              {!isOpen && <RxHamburgerMenu onClick={handleClick} className="hamburger-menu-button" />}
             </div>
-          ) : (
-            <RxHamburgerMenu onClick={handleClick} className="hamburger-menu-button"/>
-          )}
-        </nav>
+            <motion.div className="sidebar-nav background" variants={sidebar}>
+              <div className="sidebar-nav-items">
+                {isOpen && <RxCross1 onClick={handleClick} className="hamburger-menu-button-cross" />}
+                <NavLink onClick={handleClick} to="/">Home</NavLink>
+                <NavLink onClick={handleClick} to="about">About</NavLink>
+              </div>
+            </motion.div>
+          </div>
+        </motion.nav>
       </div>
     </div>
   )
