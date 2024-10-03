@@ -76,10 +76,10 @@
 #dancing-marshmallow-gif {
     position: absolute;
     opacity: 0;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 
-    z-index: 1;
+    z-index: -1;
 }
 
 .heading:hover #dancing-marshmallow-gif{
