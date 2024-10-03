@@ -169,6 +169,13 @@
     }
 }
 
+@media screen and (max-width: 1250px) {
+    #resume {
+        height: 500px;
+        width: 360px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .about-information-section p {
         display: none;
@@ -202,38 +209,15 @@
         align-items: center;
         grid-template-columns: 1fr;
     }
-
-    #cert-cards-desc {
-        font-size: 18px;
-    }
 }
 
 @media screen and (max-width: 605px) {
     .about-information-section h2{
         font-size: 30px;
     }
-    
-    .about-information-section p {
-        font-size: 18px;
-    }
 }  
 
-
-@media screen and (max-width: 485px) {
-    #resume {
-        height: 500px;
-        width: 360px;
-    }
-    #cert-cards-desc {
-        font-size: 12px;
-    }
-}
-
-
-@media screen and (max-width: 365px) {
-    #cert-cards-desc {
-        font-size: 10px;
-    }
+@media screen and (max-width: 420px) {
     .about-information-section h2{
         font-size: 22px;
     }

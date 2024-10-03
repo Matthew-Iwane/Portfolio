@@ -17,7 +17,7 @@ const AboutInformationSection = () => {
         <div
             className="about-information-section">
             <h2>Resume + Certifications &#128196;</h2>
-            <p><span>Click</span> on a <span>card</span> to <span>view</span> more about the <span>certificate</span>!</p>
+            <p><span>Click</span> on a <span>certificate</span> to <span>view</span> more <span>information</span>!</p>
 
 
             <div className="about-information-container">
@@ -44,7 +44,8 @@ const AboutInformationSection = () => {
                     </motion.a>
                 </div>
 
-                <p id="cert-cards-desc"><span>Click</span> on a <span>card</span> to <span>view</span> more about the <span>certificate</span>!</p>
+                <p id="cert-cards-desc"><span>Click</span> on a <span>certificate</span> to <span>view</span> more <span>info</span>!</p>
+                
                 <div className="certification-cards-container">
 
                     <motion.a
