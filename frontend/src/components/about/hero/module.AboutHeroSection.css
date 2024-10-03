@@ -50,6 +50,22 @@
     box-shadow: 6px 4px 10px rgb(197, 197, 197);
 }
 
+#thinking-emoji {
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+
+    z-index: 1;
+}
+
+
+
+.about-heading:hover #thinking-emoji{
+    opacity: 1;
+    transform: translate(-50%, -110%);
+}
+
 /* Media Queries */
 @media screen and (max-width: 1440px) {
     .about-hero-container {
@@ -78,6 +94,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    #thinking-emoji {
+        display: none;
+    }
     .about-hero-container  {
         width: 85%;
     }

@@ -24,9 +24,17 @@
     align-items: center;
 }
 
+.heading {
+    z-index: 5;
+}
+
 .heading h1{
     font-size: 44px; 
     font-weight: 600;
+}
+
+.heading h1 span {
+    color: #f15858;
 }
 
 .subheading {
@@ -65,6 +73,19 @@
     60% {transform: translateY(-15px);}
 }
 
+#dancing-marshmallow-gif {
+    position: absolute;
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+
+    z-index: 1;
+}
+
+.heading:hover #dancing-marshmallow-gif{
+    opacity: 1;
+    transform: translate(-50%, -120%);
+}
 
 /* Media Queries */
 @media screen and (max-width: 1440px) {
@@ -93,9 +114,6 @@
         height: 300px;
     }
 
-    .subheading {
-        font-size: 12px;
-    }
     .arrow-down {
         width: 50px;
         height: 50px;
@@ -104,6 +122,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    #dancing-marshmallow-gif {
+        display: none;
+    } 
     .hero-container {
         width: 85%;
     }
@@ -112,11 +133,23 @@
         width: 250px;
         height: 250px;
     }
+
+    .heading h1{
+        font-size: 30px; 
+    }
+
+    .subheading {
+        font-size: 14px;
+    }
 }  
 
 @media screen and (max-width: 600px) {
     .heading h1 {
         font-size: 20px;
+    }
+
+    .subheading {
+        font-size: 12px;
     }
 
     .astronaut {
