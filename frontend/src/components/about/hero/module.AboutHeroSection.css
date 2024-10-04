@@ -1,11 +1,13 @@
 .about-hero-section {
-    height: 78vh;
+    height: auto;
     width: 100%;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    padding: 6em 0;
 
     box-shadow: 10px 5px 5px 5px rgb(207, 207, 207);
 
