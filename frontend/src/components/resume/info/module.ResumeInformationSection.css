@@ -1,5 +1,5 @@
 /* Containers */
-.about-information-section {
+.resume-information-section {
     background-color: rgba(224, 224, 224, 0.336);
     width: 100%;
 
@@ -10,7 +10,7 @@
 
     padding: 8em 0;
 }
-.about-information-container {
+.resume-information-container {
     width: 50%;
     height: 100%;
 
@@ -22,28 +22,28 @@
     grid-gap: 2em;
 }
 
-.about-information-section h2{
+.resume-information-section h2{
     font-size: 40px;
 }
 
-.about-information-section p {
+.resume-information-section p {
     font-size: 22px;
     padding: 1em 0;
 }
 
-.about-information-section p span:nth-child(1){
+.resume-information-section p span:nth-child(1){
     text-decoration: underline;
 }
 
-.about-information-section p span:nth-child(2){
+.resume-information-section p span:nth-child(2){
     color: red;
 }
 
-.about-information-section p span:nth-child(3){
+.resume-information-section p span:nth-child(3){
     font-style: italic;
 }
 
-.about-information-section p span:nth-child(4){
+.resume-information-section p span:nth-child(4){
     font-weight: bold;
 }
 
@@ -73,7 +73,7 @@
 
     box-shadow: 10px 10px 10px rgb(141, 141, 141);
     
-    background-image: linear-gradient(to right, rgb(255, 75, 75), rgb(230, 111, 14), rgb(255, 137, 27),rgb(255, 194, 27));
+    background-image: linear-gradient(to right, rgb(246, 73, 73), rgb(255, 102, 0), rgb(255, 158, 31),rgb(251, 180, 86));
     color: white;
 
     padding: 1em 2em;
@@ -164,7 +164,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 1440px) {
-    .about-information-container {
+    .resume-information-container {
         width: 65%;
     }
 }
@@ -177,7 +177,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .about-information-section p {
+    .resume-information-section p {
         display: none;
     }
 
@@ -189,7 +189,7 @@
         display: block;
     }
 
-    .about-information-container {
+    .resume-information-container {
         width: 75%;
         grid-template-columns: 1fr;
     }
@@ -200,7 +200,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about-information-container {
+    .resume-information-container {
         width: 85%;
     }
 
@@ -212,13 +212,13 @@
 }
 
 @media screen and (max-width: 605px) {
-    .about-information-section h2{
+    .resume-information-section h2{
         font-size: 30px;
     }
 }  
 
 @media screen and (max-width: 420px) {
-    .about-information-section h2{
+    .resume-information-section h2{
         font-size: 22px;
     }
     #resume {

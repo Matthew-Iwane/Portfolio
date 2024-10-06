@@ -1,7 +1,7 @@
 import pfp from "../../../assets/pfp/pfp.jpg"
 // import grad_pfp from "../../assets/pfp/grad_pfp.jpg"
 
-import "./module.AboutHeroSection.css"
+import "./module.ResumeHeroSection.css"
 import "../../shared/module.Shared.css"
 
 import { motion } from "framer-motion"
@@ -16,17 +16,17 @@ import { IoMdMail } from "react-icons/io";
 
 import { useState } from "react";
 
-const AboutHeroSection = () => {
+const ResumeHeroSection = () => {
     const [cursorCoord, setCursorCoord] = useState({ left: 0, top: 0 })
 
     function handleMouseMove(e) {
       setCursorCoord({ left: e.clientX })
     }
     return (
-        <div className="about-hero-section">
-            <div className="about-hero-container">
+        <div className="resume-hero-section">
+            <div className="resume-hero-container">
                 <div className="heading-container">
-                    <div className="about-heading" onMouseMove={handleMouseMove}>
+                    <div className="resume-heading" onMouseMove={handleMouseMove}>
                         <img
                             src={look_gif}
                             alt="dancing marshmallow guy"
@@ -35,7 +35,7 @@ const AboutHeroSection = () => {
                         />
                         <h1><span>Job Related</span> Information</h1>
                     </div>
-                    <div className="about-subheading">
+                    <div className="resume-subheading">
                         <p>
                             This section provides more information regarding my qualifications as a developer.
                             Anything from my <span>resume</span>, to <span>social links</span>, to other <span>tech-related</span> things about me are provided below. Take a look!
@@ -83,4 +83,4 @@ const AboutHeroSection = () => {
     )
 }
 
-export default AboutHeroSection
+export default ResumeHeroSection

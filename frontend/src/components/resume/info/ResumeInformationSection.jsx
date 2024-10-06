@@ -1,4 +1,4 @@
-import "./module.AboutInformationSection.css"
+import "./module.ResumeInformationSection.css"
 import resume from "../../../assets/resume.png"
 import resume_pdf from "../../../assets/resume_pdf.pdf"
 
@@ -12,15 +12,15 @@ import { motion } from "framer-motion"
 import meta from "../../../assets/certifications/meta-cert.png"
 import deeplearningai from "../../../assets/certifications/dlai.png"
 
-const AboutInformationSection = () => {
+const ResumeInformationSection = () => {
     return (
         <div
-            className="about-information-section">
+            className="resume-information-section">
             <h2>Resume + Certifications &#128196;</h2>
             <p><span>Click</span> on a <span>certificate</span> to <span>view</span> more <span>information</span>!</p>
 
 
-            <div className="about-information-container">
+            <div className="resume-information-container">
                 <div className="resume-container">
                     <motion.img
                         src={resume}
@@ -52,10 +52,10 @@ const AboutInformationSection = () => {
                         className="certification-card"
                         target="_blank"
                         href="https://www.coursera.org/account/accomplishments/professional-cert/2YNFD9M9S8ZB"
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 1.1, border: "1px solid #000" }}
                         initial={{ opacity: 0, scale: 0.5 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.4 }}
+                        transition={{ duration: 0.2 }}
                         viewport={{
                             once: true
                         }}
@@ -67,10 +67,10 @@ const AboutInformationSection = () => {
                         className="certification-card"
                         target="_blank"
                         href="https://www.coursera.org/account/accomplishments/specialization/SEBLCZQMNAVV"
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 1.1, border: "1px solid #000" }}
                         initial={{ opacity: 0, scale: 0.5 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.4 }}
+                        transition={{ duration: 0.2 }}
                         viewport={{
                             once: true
                         }}
@@ -82,4 +82,4 @@ const AboutInformationSection = () => {
         </div>
     )
 }
-export default AboutInformationSection
+export default ResumeInformationSection
