@@ -45,18 +45,18 @@
     color: rgb(250, 82, 82);
 }
 
-.astronaut {
+.hero-image {
     width: 400px;
     height: 400px;
 
-    animation: bouncing-astronaut 3s ease-in-out infinite;
+    /* animation: bouncing 3s ease-in-out infinite; */
 }
 
-@keyframes bouncing-astronaut {
+/* @keyframes bouncing {
     0% {transform: translateY(-20px);}
     50% {transform: translateY(20px);}
     100% {transform: translateY(-20px);}
-}
+} */
 
 .arrow-down {
     width: 80px;
@@ -89,6 +89,11 @@
 
 /* Media Queries */
 @media screen and (max-width: 1440px) {
+    .hero-image {
+        width: 350px;
+        height: 350px;
+    }
+
     .hero-container {
         width: 65%;
     }
@@ -109,7 +114,7 @@
         width: 75%;
     }
 
-    .astronaut {
+    .hero-image {
         width: 300px;
         height: 300px;
     }
@@ -129,7 +134,7 @@
         width: 85%;
     }
 
-    .astronaut {
+    .hero-image {
         width: 250px;
         height: 250px;
     }
@@ -152,7 +157,7 @@
         font-size: 12px;
     }
 
-    .astronaut {
+    .hero-image {
         width: 200px;
         height: 200px;
     }
@@ -165,7 +170,7 @@
     .subheading {
         font-size: 16px;
     }
-    .astronaut {
+    .hero-image {
         display: none;
     }
 }

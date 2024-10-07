@@ -25,6 +25,13 @@
     gap: 2em;
 }
 
+/* .heading-container {
+    border-radius: 30px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 6px 4px 10px rgb(197, 197, 197);
+    padding: 1em;
+} */
+
 .resume-heading h1{
     font-size: 44px; 
     font-weight: 600;
@@ -44,12 +51,8 @@
 
 
 .pfp-img {
-    width: 340px;
-    height: 340px;
-
-    border-radius: 30px;
-    border: 1px solid #e7e7e7;
-    box-shadow: 6px 4px 10px rgb(197, 197, 197);
+    width: 400px;
+    height: 400px;
 }
 
 #thinking-emoji {
@@ -82,8 +85,8 @@
     }
 
     .pfp-img {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
     }
 
     .resume-subheading {

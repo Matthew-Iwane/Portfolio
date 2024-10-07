@@ -1,5 +1,5 @@
-import pfp from "../../../assets/pfp/pfp.jpg"
-// import grad_pfp from "../../assets/pfp/grad_pfp.jpg"
+// import project_thinking from "../../../assets/project_thinking.svg"
+import code_thinking from "../../../assets/code_thinking.svg"
 
 import "./module.ResumeHeroSection.css"
 import "../../shared/module.Shared.css"
@@ -69,8 +69,8 @@ const ResumeHeroSection = () => {
                 </div>
 
                 <motion.img
-                    src={pfp}
-                    alt="image of Matthew Iwane profile"
+                    src={code_thinking}
+                    alt="man sitting down thinking about programming"
                     className="pfp-img"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}

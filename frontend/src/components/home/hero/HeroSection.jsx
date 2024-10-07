@@ -1,6 +1,8 @@
 // import { Link } from "react-router-dom"
+// import astronaut from "../../../assets/astronaut.svg";\
 
-import astronaut from "../../../assets/astronaut.svg";
+import programming from "../../../assets/programming.svg"
+
 import { RxDoubleArrowDown } from "react-icons/rx";
 
 import { FaLinkedinIn } from "react-icons/fa";
@@ -72,7 +74,16 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <img src={astronaut} alt="SVG of an astronaut" className="astronaut" />
+        <motion.img 
+          src={programming} 
+          alt="image of a man sitting down programming" 
+          className="hero-image" 
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.2 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        />
       </div>
       <RxDoubleArrowDown className="arrow-down" />
     </div>
