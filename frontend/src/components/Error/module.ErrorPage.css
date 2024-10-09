@@ -1,5 +1,5 @@
 .error-page {
-    height: 50vh;
+    height: 75vh;
 
     display: flex;
     justify-content: center;
@@ -9,7 +9,37 @@
     gap: 1em;
 }
 
+.error-page h1 {
+    color: #f15858;
+}
+
+.error-page p {
+    font-size: 24px;
+    margin: 0 2em;
+}
+
+
+.error-page span:nth-child(1) {
+    font-weight: bold;
+}
+
+.error-page span:nth-child(2) {
+    text-decoration: underline;
+}
+
+.error-page span:nth-child(3) {
+    font-style: italic;
+}
+
+
 #sad-marshmallow {
     width: 250px;
     height: 250px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+    .error-page p {
+        font-size: 20px;
+    }
 }

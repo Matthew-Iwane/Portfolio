@@ -9,7 +9,7 @@ export default function ErrorPage() {
   return (
     <div className="error-page">
       <h1>Oops!</h1>
-      <p>I never created the page you are looking for!</p>
+      <p>This page does <span>not</span> exist... check the <span>navigation menu</span> for valid <span>links</span>!</p>
       <img src={sad_gif} alt="crying marshmallow" id="sad-marshmallow"/>
 
     </div>
