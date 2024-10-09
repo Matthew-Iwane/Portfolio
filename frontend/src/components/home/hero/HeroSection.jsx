@@ -85,7 +85,8 @@ const HeroSection = () => {
           whileTap={{ scale: 0.9 }}
         />
       </div>
-      <RxDoubleArrowDown className="arrow-down" />
+
+      <a href="#portfolio-section"><RxDoubleArrowDown className="arrow-down" /></a>
     </div>
   );
 };

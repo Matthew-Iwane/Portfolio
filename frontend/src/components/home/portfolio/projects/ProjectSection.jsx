@@ -1,9 +1,11 @@
-// import { Link } from "react-router-dom";
+// Framer Motion
 import { motion } from "framer-motion"
 
+// CSS
 import "./module.ProjectSection.css";
 
-import data from "../../../../data/data.json";
+// Loader
+import Loader from "../../../shared/loader/Loader";
 
 // Project Images
 import bu_course_search from "../../../../assets/projects/bu_course_search/bu-course-search.png"
@@ -21,7 +23,7 @@ const getImageSrc = {
 }
 
 const LinkVariants = {
-  initial:{
+  initial: {
     opacity: 0,
     y: 100,
   },
@@ -29,43 +31,48 @@ const LinkVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.1 * index
-    }
-  })
-}
+      delay: 0.1 * index,
+    },
+  }),
+};
 
-const ProjectSection = () => {
+const ProjectSection = ({ data, loader }) => {
   return (
     <div className="projects-container">
       <div className="cards-container">
-        {data.projects.map((p, idx) => (
-          <motion.a 
-            href={p.link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="card" 
-            key={p.id}
-            variants={LinkVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true
-            }}
-            custom={idx}
-          >
-            {<img className="card-image" src={getImageSrc[p.project_name] ? getImageSrc[p.project_name] :  coming_soon} alt="card image" />}
-            {<div className="card-name">{p.project_name}</div>}
-            {
+        {loader ? (
+          <Loader />
+        ) : (
+          data.map((p, index) => (
+            <motion.a
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+              key={p.id}
+              variants={LinkVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.04 }}
+              custom={index}
+            >
+              <img
+                className="card-image"
+                src={getImageSrc[p.name] || coming_soon}
+                alt={`${p.name} card image`}
+              />
+              <div className="card-name">{p.name}</div>
               <div className="tags-container">
-                {p.project_tools.map((tool, idx) => (
+                {p.tools?.map((tool, idx) => (
                   <div key={idx} className="tags">
                     {tool}
                   </div>
                 ))}
               </div>
-            }
-          </motion.a>
-        ))}
+            </motion.a>
+          ))
+        )}
       </div>
     </div>
   );
