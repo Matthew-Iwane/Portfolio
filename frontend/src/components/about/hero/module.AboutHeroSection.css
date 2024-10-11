@@ -1,0 +1,25 @@
+/* About Hero Section */
+.about-hero-section {
+    height: auto;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 4em 0;
+
+    box-shadow: 10px 5px 5px 5px rgb(207, 207, 207);
+
+    border: 1px solid rgba(236, 236, 236, 0.568);
+}
+
+.about-hero-container {
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

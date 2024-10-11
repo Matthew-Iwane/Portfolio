@@ -6,9 +6,9 @@ import Experience from "./experience/Experience";
 import { useState, useEffect } from "react"
 
 // Firebase
-import { collection, getDocs } from "firebase/firestore"; 
-import { db, storage } from "./../../../../firebase.config.js"
-import { getDownloadURL, ref, list } from "firebase/storage"
+// import { collection, getDocs } from "firebase/firestore"; 
+// import { db, storage } from "./../../../../firebase.config.js"
+// import { getDownloadURL, ref, list } from "firebase/storage"
 
 // CSS
 import "./module.Portfolio.css"
@@ -22,48 +22,48 @@ const Portfolio = () => {
 
     const [loadingProjects, setLoadingProjects] = useState(true);
 
-    useEffect(() => {
-        const fetchData = async () => {
-          setLoadingProjects(true)
-          try {
-            const projectSnapshot = await getDocs(collection(db, "projects"))
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //       setLoadingProjects(true)
+    //       try {
+    //         const projectSnapshot = await getDocs(collection(db, "projects"))
       
-            const projectData = projectSnapshot.docs.map(doc => ({
-              id: doc.id,
-              link: doc.data().link,
-              name: doc.data().project_name,
-              tools: doc.data().project_tools,
-            }));
+    //         const projectData = projectSnapshot.docs.map(doc => ({
+    //           id: doc.id,
+    //           link: doc.data().link,
+    //           name: doc.data().project_name,
+    //           tools: doc.data().project_tools,
+    //         }));
 
-            setProjectData(projectData);
-          } catch (error) {
-            console.error("Error fetching data: ", error);
-          }
-          setLoadingProjects(false)
-        };
+    //         setProjectData(projectData);
+    //       } catch (error) {
+    //         console.error("Error fetching data: ", error);
+    //       }
+    //       setLoadingProjects(false)
+    //     };
       
-        fetchData();
-      }, []);
+    //     fetchData();
+    //   }, []);
 
-      useEffect(() => {
-        const fetchImageUrls = async () => {
-          try {
-            const spaceRef = ref(storage);
-            const img = await list(spaceRef);
-            const urls = await Promise.all(
-              img.items.map(async (itemRef) => {
-                return await getDownloadURL(itemRef);
-              })
-            );
+    //   useEffect(() => {
+    //     const fetchImageUrls = async () => {
+    //       try {
+    //         const spaceRef = ref(storage);
+    //         const img = await list(spaceRef);
+    //         const urls = await Promise.all(
+    //           img.items.map(async (itemRef) => {
+    //             return await getDownloadURL(itemRef);
+    //           })
+    //         );
         
-            setExperienceData(urls)
-          } catch (error) {
-            console.error("Error fetching image URLs:", error);
-          }
-        };
+    //         setExperienceData(urls)
+    //       } catch (error) {
+    //         console.error("Error fetching image URLs:", error);
+    //       }
+    //     };
         
-        fetchImageUrls();
-      }, []);
+    //     fetchImageUrls();
+    //   }, []);
 
 
     return (

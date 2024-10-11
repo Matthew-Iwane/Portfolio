@@ -35,13 +35,12 @@ export const Navigation = () => {
       transitionEnd: {
         opacity: 0,
       },
-      opacity: 1, 
+      opacity: 1,
     },
   };
 
   return (
     <div className="nav-section">
-
       {/* Web Navigation Menu */}
       <div className="nav-container">
         <NavLink to="/" className="logo">
@@ -51,6 +50,7 @@ export const Navigation = () => {
         <nav className="nav-items">
           <NavLink to="/">Home</NavLink>
           <NavLink to="resume">Resume</NavLink>
+          <NavLink to="about">About</NavLink>
         </nav>
 
         {/* Hamburger Menu Navigation Menu */}
@@ -71,18 +71,21 @@ export const Navigation = () => {
               )}
             </div>
             <motion.div className="sidebar-nav background" variants={sidebar}>
+              {isOpen && (
+                <RxCross1
+                  onClick={handleClick}
+                  className="hamburger-menu-button-cross"
+                />
+              )}
               <div className="sidebar-nav-items">
-                {isOpen && (
-                  <RxCross1
-                    onClick={handleClick}
-                    className="hamburger-menu-button-cross"
-                  />
-                )}
                 <NavLink onClick={handleClick} to="/">
                   Home
                 </NavLink>
                 <NavLink onClick={handleClick} to="resume">
                   Resume
+                </NavLink>
+                <NavLink onClick={handleClick} to="about">
+                  About
                 </NavLink>
               </div>
             </motion.div>
