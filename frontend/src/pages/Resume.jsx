@@ -1,14 +1,13 @@
 import ResumeHeroSection from "../components/resume/hero/ResumeHeroSection";
 import ResumeInformationSection from "../components/resume/info/ResumeInformationSection";
-import PersonalInfo from "../components/resume/personal/PersonalInfo";
-
+import School from "../components/resume/school/School"
 
 const Resume = () => {
   return (
     <div>
       <ResumeHeroSection />
       <ResumeInformationSection />
-      <PersonalInfo />
+      <School />
     </div>
   );
 };

@@ -1,20 +1,23 @@
-// import project_thinking from "../../../assets/project_thinking.svg"
-import code_thinking from "../../../assets/code_thinking.svg"
-
+// CSS
 import "./module.ResumeHeroSection.css"
 import "../../shared/module.Shared.css"
 
+// Framer Motion
 import { motion } from "framer-motion"
 
+// GIF
 import look_gif from "../../../assets/gifs/look.gif"
 
-// import { Link } from "react-router-dom"
-
+// React Icons
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { IoMdMail } from "react-icons/io";
 
+// React Imports
 import { useState } from "react";
+
+// Images
+import code_thinking from "../../../assets/code_thinking.svg"
 
 const ResumeHeroSection = () => {
     const [cursorCoord, setCursorCoord] = useState({ left: 0, top: 0 })
@@ -70,8 +73,8 @@ const ResumeHeroSection = () => {
 
                 <motion.img
                     src={code_thinking}
-                    alt="man sitting down thinking about programming"
-                    className="pfp-img"
+                    alt="man sitting next to a big computer"
+                    className="code-thinker-image"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}

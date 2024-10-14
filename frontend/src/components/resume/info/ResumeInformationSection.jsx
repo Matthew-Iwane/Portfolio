@@ -1,25 +1,20 @@
 import "./module.ResumeInformationSection.css"
 import resume from "../../../assets/resume.png"
 import resume_pdf from "../../../assets/resume_pdf.pdf"
-
-// import data from "../../../data/data.json"
-
 import { BsArrowUpRight } from "react-icons/bs";
 
-
+// Framer Motion
 import { motion } from "framer-motion"
 
+// Certifications
 import meta from "../../../assets/certifications/meta-cert.png"
 import deeplearningai from "../../../assets/certifications/dlai.png"
 
 const ResumeInformationSection = () => {
     return (
-        <div
-            className="resume-information-section">
+        <div className="resume-page-section">
             <h2>Resume + Certifications &#128196;</h2>
             <p><span>Click</span> on a <span>certificate</span> to <span>view</span> more <span>information</span>!</p>
-
-
             <div className="resume-information-container">
                 <div className="resume-container">
                     <motion.img
@@ -45,7 +40,7 @@ const ResumeInformationSection = () => {
                 </div>
 
                 <p id="cert-cards-desc"><span>Click</span> on a <span>certificate</span> to <span>view</span> more <span>info</span>!</p>
-                
+
                 <div className="certification-cards-container">
 
                     <motion.a

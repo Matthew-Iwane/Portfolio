@@ -8,8 +8,7 @@
     flex-direction: column;
 
     padding: 6em 0;
-
-    box-shadow: 2px -4px 4px 4px rgb(168, 168, 168);;
+    /* box-shadow: 2px -4px 4px 4px rgb(168, 168, 168);; */
 }
 
 .info-container {
@@ -17,7 +16,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    width: 33%;
+    width: 40%;
 
     gap: 1em;
 }
@@ -67,17 +66,15 @@
     .info-container {
         width: 60%;
     }
+    #grab-svg {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 830px) {
     .info-container {
         width: 85%;
     }
-
-    #grab-svg {
-        display: none;
-    }
-
 }
 
 @media screen and (max-width: 590px) {

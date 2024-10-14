@@ -1,5 +1,5 @@
 .resume-hero-section {
-    height: auto;
+    height: 62vh;
     width: 100%;
     
     display: flex;
@@ -16,11 +16,16 @@
 
 .resume-hero-container {
     height: 100%;
-    width: 50%;
+    width: 54%;
     
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
     align-items: center;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 
     gap: 2em;
 }
@@ -49,11 +54,11 @@
     color: red;
 }
 
-
-.pfp-img {
+.code-thinker-image {
     width: 400px;
     height: 400px;
 }
+
 
 #thinking-emoji {
     position: absolute;
@@ -75,7 +80,7 @@
 @media screen and (max-width: 1440px) {
     .resume-hero-container {
         width: 65%;
-    }
+    }   
 }
 
 
@@ -84,17 +89,17 @@
         width: 75%;
     }
 
-    .pfp-img {
-        width: 350px;
-        height: 350px;
-    }
-
     .resume-subheading {
         font-size: 14px;
     }
 
     .resume-heading h1 {
         font-size: 32px;
+    }
+    
+    .code-thinker-image {
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -105,8 +110,7 @@
     .resume-hero-container  {
         width: 85%;
     }
-
-    .pfp-img {
+    .code-thinker-image {
         width: 250px;
         height: 250px;
     }
@@ -119,8 +123,10 @@
     .resume-subheading {
         font-size: 20px;
     }
-
-    .pfp-img {
+    .resume-hero-container {
+        grid-template-columns: 1fr;
+    }
+    .code-thinker-image {
         display: none;
     }
 }  

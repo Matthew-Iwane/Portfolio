@@ -1,0 +1,167 @@
+/* School Information Section */
+.school-section {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 2px -4px 4px 4px rgb(168, 168, 168);;
+
+    padding-bottom: 4em;
+}
+
+.school-container {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-info-container {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+
+    height: 100%;
+    width: 100%;
+}
+
+.school-info-desc {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.school-info-desc h1 {
+    font-size: 32px;
+}
+.school-info-desc p {
+    font-size: 22px;
+}
+
+
+/* Related Coursework */
+.bu-image {
+    height: 100%;
+    width: 100%;
+}
+
+.related-coursework {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.related-coursework h2 {
+    font-size: 34px;
+}
+
+.related-coursework ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    list-style: none;
+    font-size: 22px;
+    
+    padding: 0.8em 2em;
+
+    margin: 1em 0;
+    
+    border: 1px solid black;
+    border-radius: 100px;
+
+    background-color: white;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+    .school-container {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .school-info-container{
+        grid-template-columns: 1fr;
+    }
+    .school-info-desc {
+        padding-top: 4em;
+        align-items: center;
+    }
+
+    .school-info-desc h1 {
+        font-size: 3.2vw;
+    }
+
+    .school-info-desc p {
+        font-size: 2.8vw;
+    }
+
+    .bu-image {
+        padding: 0 6em;
+    }
+
+    .related-coursework {
+        width: 100%;
+        align-items: center;
+    }
+}  
+
+@media screen and (max-width: 696px) {
+    .related-coursework h2 {
+        font-size: 28px;
+    }
+    .related-coursework span {
+        font-size: 16px;
+    }
+    .bu-image {
+        padding: 0 2em;
+    }
+}  
+
+@media screen and (max-width: 530px) {
+    .related-coursework h2 {
+        font-size: 22px;
+    }
+    .related-coursework span {
+        font-size: 12px;
+    }
+}  
+
+@media screen and (max-width: 478px) {
+    .bu-image {
+        padding: 0 2em;
+    }
+
+    .related-coursework h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .school-info-desc h1 {
+        font-size: 18px;
+    }
+
+    .school-info-desc p {
+        font-size: 12px
+    }
+
+    .related-coursework h2 {
+        font-size: 16px;
+    }
+}

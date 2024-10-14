@@ -1,5 +1,5 @@
 /* Containers */
-.resume-information-section {
+.resume-page-section {
     background-color: rgba(224, 224, 224, 0.336);
 
     width: 100%;
@@ -11,40 +11,40 @@
 
     padding: 8em 0;
 }
+
 .resume-information-container {
     width: 50%;
     height: 100%;
 
     display: grid;
     align-items: center;
-    justify-content: center;
     grid-template-columns: 1fr 1fr;
 
     grid-gap: 2em;
 }
 
-.resume-information-section h2{
+.resume-page-section h2{
     font-size: 34px;
 }
 
-.resume-information-section p {
+.resume-page-section p {
     font-size: 22px;
     padding: 1em 0;
 }
 
-.resume-information-section p span:nth-child(1){
+.resume-page-section p span:nth-child(1){
     text-decoration: underline;
 }
 
-.resume-information-section p span:nth-child(2){
+.resume-page-section p span:nth-child(2){
     color: red;
 }
 
-.resume-information-section p span:nth-child(3){
+.resume-page-section p span:nth-child(3){
     font-style: italic;
 }
 
-.resume-information-section p span:nth-child(4){
+.resume-page-section p span:nth-child(4){
     font-weight: bold;
 }
 
@@ -153,6 +153,7 @@
     height: 100%;
 }
 
+
 /* Media Queries */
 @media screen and (max-width: 1440px) {
     .resume-information-container {
@@ -168,16 +169,14 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .resume-information-section p {
+    .resume-page-section p {
         display: none;
     }
 
     #cert-cards-desc {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         display: block;
+        text-align: center;
     }
 
     .resume-information-container {
@@ -187,6 +186,8 @@
 
     .certification-cards-container {
         grid-template-columns: 1fr 1fr;
+        width: 100%;
+        place-content: center;
     }
 }
 
@@ -203,13 +204,13 @@
 }
 
 @media screen and (max-width: 605px) {
-    .resume-information-section h2{
+    .resume-page-section h2{
         font-size: 30px;
     }
 }  
 
 @media screen and (max-width: 420px) {
-    .resume-information-section h2{
+    .resume-page-section h2{
         font-size: 22px;
     }
     #resume {

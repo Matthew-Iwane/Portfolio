@@ -1,4 +1,3 @@
-/* About Hero Section */
 .about-hero-section {
     height: auto;
     width: 100%;
@@ -11,15 +10,111 @@
     padding: 4em 0;
 
     box-shadow: 10px 5px 5px 5px rgb(207, 207, 207);
-
     border: 1px solid rgba(236, 236, 236, 0.568);
 }
 
-.about-hero-container {
+/* Header Container */
+.about-hero-desc-container {
+    width: 50%;
+    height: 100%;
+    
+    display: grid;
+    place-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; 
+
+    grid-gap: 2em;
+}
+
+.about-header {
+    width: 100%;
+    font-size: 44px;
+}
+.about-header span:nth-child(1) {
+    font-weight: bold;
+}
+.about-header span:nth-child(2) {
+    font-style: italic;
+    color: red;
+}
+.about-header span:nth-child(3) {
+    text-decoration: underline;
+}
+
+.man-drawing-graph-image {
+    height: 100%;
+    width: 100%;
+}
+
+/* FAQ Section */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    gap: 2em;
+
+    flex: 1;
+
     height: 100%;
     width: 50%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+    .about-header {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .about-hero-desc-container {
+        width: 65%
+    }
+    .faq-container {
+        width: 65%
+    }
+
+    .about-header {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .about-header {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .about-hero-desc-container {
+        width: 80%
+    }
+    .faq-container {
+        width: 80%
+    }
+
+    .about-header {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about-hero-desc-container {
+        grid-template-columns: 1fr;
+        place-content: center;
+        align-items: center;
+    }
+
+    .about-header {
+        margin-bottom: 2em;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .man-drawing-graph-image {
+        display: none;
+    }
+
 }

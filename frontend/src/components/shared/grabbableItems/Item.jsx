@@ -1,10 +1,6 @@
 import { useMotionValue, Reorder, useDragControls, motion } from "framer-motion";
 import { ReorderIcon } from "./Icon";
 
-// import { GoGrabber } from "react-icons/go";
-
-
-
 export const Item = ({ item }) => {
   const y = useMotionValue(0);
   const dragControls = useDragControls();

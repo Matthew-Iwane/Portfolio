@@ -4,9 +4,16 @@ import "./module.PersonalInfo.css"
 
 import { useState } from "react";
 import { Reorder } from "framer-motion";
-import { Item } from "./Item";
+import { Item } from "../../shared/grabbableItems/Item";
 
-const initialItems = ["323 356 4113 📞", "Tokyo, Japan 🗾", "Willing to commute 🚗", "Software Engineer 💻", "Product Manager 📋", "23 Years Old 🍰"];
+const initialItems = [
+    "323 356 4113 📞", 
+    "Tokyo, Japan 🗾", 
+    "Willing to commute 🚗", 
+    "Software Engineer 💻", 
+    "Full Stack Developer 📋", 
+    "23 Years Old 🍰"
+];
 
 const PersonalInfo = () => {
     const [items, setItems] = useState(initialItems);
