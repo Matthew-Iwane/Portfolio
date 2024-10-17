@@ -1,6 +1,7 @@
 /* School Information Section */
 .school-section {
     width: 100%;
+    height: 100%;    
 
     display: flex;
     justify-content: center;
@@ -9,7 +10,7 @@
 
     box-shadow: 2px -4px 4px 4px rgb(168, 168, 168);;
 
-    padding-bottom: 4em;
+    padding: 4em 0;
 }
 
 .school-container {
@@ -28,8 +29,12 @@
     align-items: center;
     grid-template-columns: 1fr 1fr;
 
+    grid-gap: 1em;
+
     height: 100%;
     width: 100%;
+
+    margin: 2em 0;
 }
 
 .school-info-desc {
@@ -39,20 +44,38 @@
     flex-direction: column;
     justify-content: center;
 }
-.school-info-desc h1 {
+
+.school-info-desc h1:nth-child(1) {
+    font-size: 44px;
+}
+.school-info-desc h1:nth-child(2) {
     font-size: 32px;
 }
 .school-info-desc p {
     font-size: 22px;
 }
 
-
-/* Related Coursework */
-.bu-image {
+.bu-img-container {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.bu-image {
+    height: 220px;
+    width: 220px;
+
+    animation: rotate 8s linear infinite reverse;
+}
+@keyframes rotate {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg}
+}
+
+
+/* Related Coursework */
 .related-coursework {
     width: 100%;
 
@@ -111,9 +134,6 @@
         font-size: 2.8vw;
     }
 
-    .bu-image {
-        padding: 0 6em;
-    }
 
     .related-coursework {
         width: 100%;
@@ -128,9 +148,6 @@
     .related-coursework span {
         font-size: 16px;
     }
-    .bu-image {
-        padding: 0 2em;
-    }
 }  
 
 @media screen and (max-width: 530px) {
@@ -143,9 +160,6 @@
 }  
 
 @media screen and (max-width: 478px) {
-    .bu-image {
-        padding: 0 2em;
-    }
 
     .related-coursework h2 {
         font-size: 20px;

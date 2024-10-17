@@ -1,5 +1,7 @@
 // Image imports
-import bu_emblem from "../../../assets/pfp/bu_emblem.png"
+// import bu_emblem from "../../../assets/pfp/bu_emblem.png"
+import bu_emblem_circle from "../../../assets/pfp/bu_emblem_circle.png"
+
 
 // CSS
 import "./module.School.css"
@@ -25,10 +27,14 @@ const School = () => {
             <div className="school-container">
                 <div className="school-info-container">
                     <div className="school-info-desc">
+                        <h1>Boston University</h1>
                         <h1>Computer Science</h1>
                         <p>Bachelor of Arts - May 2024</p>
                     </div>
-                    <img src={bu_emblem} alt="image of boston university's emblem" className="bu-image" />
+                    <div className="bu-img-container">
+
+                        <img src={bu_emblem_circle} alt="image of boston university's emblem" className="bu-image" />
+                    </div>
                 </div>
 
                 <div className="related-coursework">
