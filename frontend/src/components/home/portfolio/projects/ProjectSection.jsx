@@ -18,12 +18,12 @@ import ei5 from "../../../../assets/projects/ei5/ei5.png"
 import coming_soon from "../../../../assets/projects/coming_soon.jpg"
 
 const getImageSrc = {
+  "ei5.jp" : ei5,
   "Boston University Course Search" : bu_course_search,
   "Exercise Tracker" : exercise_tracker,
   "Art Book Collective" : art_book_collective,
   "Little Lemon" : little_lemon,
   "Job Board" : job_board,
-  "ei5.jp" : ei5,
 }
 
 const LinkVariants = {
