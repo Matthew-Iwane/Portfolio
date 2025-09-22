@@ -51,6 +51,7 @@ export const Navigation = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="resume">Resume</NavLink>
           <NavLink to="about">About</NavLink>
+          <NavLink to="work">Work</NavLink>
         </nav>
 
         {/* Hamburger Menu Navigation Menu */}
@@ -86,6 +87,9 @@ export const Navigation = () => {
                 </NavLink>
                 <NavLink onClick={handleClick} to="about">
                   About
+                </NavLink>
+                <NavLink onClick={handleClick} to="work">
+                  Work
                 </NavLink>
               </div>
             </motion.div>

@@ -10,6 +10,7 @@ import {
 import Home from "./pages/Home"
 import Resume from "./pages/Resume"
 import About from "./pages/About"
+import Work from "./pages/Work"
 
 // error page
 import ErrorPage from './pages/ErrorPage'
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route index element={<Home/>}/>
       <Route path="resume" element={<Resume/>}/>
       <Route path="about" element={<About />}/>
+      <Route path="work" element={<Work />}/>
 
       <Route path="*" element={<ErrorPage/>}/>
     </Route>
