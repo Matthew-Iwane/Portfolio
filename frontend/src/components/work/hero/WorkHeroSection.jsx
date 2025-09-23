@@ -17,7 +17,7 @@ import { IoMdMail } from "react-icons/io";
 import { useState } from "react";
 
 // Images
-import code_thinking from "../../../assets/code_thinking.svg"
+import under_construction from "../../../assets/under_construction.svg"
 
 
 export const HeroSection = () => {
@@ -39,13 +39,7 @@ export const HeroSection = () => {
                             id="thinking-emoji"
                             style={{ left: `${cursorCoord.left}px` }}
                         />
-                        <h1><span>Job Related</span> Information</h1>
-                    </div>
-                    <div className="resume-subheading">
-                        <p>
-                            This section provides more information regarding my qualifications as a developer.
-                            Anything from my <span>resume</span>, to <span>social links</span>, to other <span>tech-related</span> things about me are provided below. Take a look!
-                        </p>
+                        <h1><span>Page Under</span> Development</h1>
                     </div>
                     <div className="social-links">
                         <motion.a
@@ -75,8 +69,8 @@ export const HeroSection = () => {
                 </div>
 
                 <motion.img
-                    src={code_thinking}
-                    alt="man sitting next to a big computer"
+                    src={under_construction}
+                    alt="two people working at a construction site"
                     className="code-thinker-image"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}

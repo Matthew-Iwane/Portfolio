@@ -33,7 +33,7 @@ const Portfolio = () => {
               link: doc.data().link,
               name: doc.data().project_name,
               tools: doc.data().project_tools,
-            }));
+            })).reverse();
 
             setProjectData(projectData);
           } catch (error) {
