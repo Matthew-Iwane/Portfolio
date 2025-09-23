@@ -6,7 +6,7 @@ import Experience from "./experience/Experience";
 import { useState, useEffect } from "react"
 
 // Firebase
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs, orderBy, query } from "firebase/firestore"; 
 import { db, storage } from "./../../../../firebase.config.js"
 import { getDownloadURL, ref, list } from "firebase/storage"
 
@@ -26,14 +26,19 @@ const Portfolio = () => {
         const fetchData = async () => {
           setLoadingProjects(true)
           try {
-            const projectSnapshot = await getDocs(collection(db, "projects"))
+            const projectsQuery = query(
+              collection(db, "projects"), 
+              orderBy("order", "asc") // using orderBy() because I can not rearrange the documents in the firestore UI
+            );
+
+            const projectSnapshot = await getDocs(projectsQuery)
       
             const projectData = projectSnapshot.docs.map(doc => ({
               id: doc.id,
               link: doc.data().link,
               name: doc.data().project_name,
               tools: doc.data().project_tools,
-            })).reverse();
+            }));
 
             setProjectData(projectData);
           } catch (error) {
