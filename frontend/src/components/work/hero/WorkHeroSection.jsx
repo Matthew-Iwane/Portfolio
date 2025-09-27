@@ -27,8 +27,8 @@ export const HeroSection = () => {
     {
       id: 1,
       company: "Vigience",
-      position: "Salesforce Developer",
-      period: "Oct 2025 - Present",
+      position: "Application Developer",
+      period: "Nov 2025 - Present",
       location: "Tokyo, Japan · In Person",
       description: "Developing enterprise solutions using Salesforce platform technologies",
       learnings: "Still early days, but gaining experience in CRM solutions, cloud computing, and working in a diverse team.",
