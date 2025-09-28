@@ -35,7 +35,7 @@
 
 /* Accent Text Styling */
 .accent-text {
-  color: #dc3545;
+  color: rgb(250, 82, 82);
   font-style: italic;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .work-hero-subtitle em {
-  color: #dc3545;
+  color: rgb(250, 82, 82);
   font-style: italic;
   font-weight: 500;
 }
@@ -67,7 +67,7 @@
   width: 24px;
   height: 40px;
   margin: 0 auto 10px;
-  border: 2px solid #dc3545;
+  border: 2px solid rgb(250, 82, 82);
   border-radius: 20px;
   position: relative;
 }
@@ -79,7 +79,7 @@
   width: 4px;
   height: 4px;
   margin-left: -2px;
-  background: #dc3545;
+  background: rgb(250, 82, 82);
   border-radius: 50%;
   animation: scrollAnimation 2s infinite;
 }
@@ -217,7 +217,7 @@
   left: 0;
   width: 3px;
   height: 100%;
-  background: #dc3545;
+  background: rgb(250, 82, 82);
 }
 
 .timeline-content {
@@ -235,7 +235,7 @@
 }
 
 .timeline-period {
-  color: #dc3545;
+  color: rgb(250, 82, 82);
   font-size: 0.9rem;
   font-weight: 600;
   font-style: italic;
@@ -277,7 +277,7 @@
   padding: 15px;
   border-radius: 6px;
   margin-bottom: 20px;
-  border-left: 3px solid #dc3545;
+  border-left: 3px solid rgb(250, 82, 82);
 }
 
 .detail-title {
@@ -290,7 +290,7 @@
 }
 
 .detail-title .accent-text {
-  color: #dc3545;
+  color: rgb(250, 82, 82);
   font-style: normal;
 }
 
@@ -323,9 +323,9 @@
 }
 
 .tech-badge {
-  color: #dc3545;
+  color: rgb(250, 82, 82);
   padding: 5px 12px;
-  border: 1px solid #dc3545;
+  border: 1px solid rgb(250, 82, 82);
   border-radius: 4px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -335,7 +335,7 @@
 }
 
 .tech-badge:hover {
-  background: #dc3545;
+  background: rgb(250, 82, 82);
   color: white;
 }
 
@@ -355,7 +355,7 @@
 }
 
 .highlights-title em {
-  color: #dc3545;
+  color: rgb(250, 82, 82);
   font-style: italic;
   text-transform: none;
 }
@@ -373,7 +373,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dc3545;
+  background: rgb(250, 82, 82);
   margin-right: 10px;
   flex-shrink: 0;
 }
@@ -393,7 +393,7 @@
 }
 
 .timeline-end p em {
-  color: #dc3545;
+  color: rgb(250, 82, 82);
 }
 
 /* Responsive Design */
