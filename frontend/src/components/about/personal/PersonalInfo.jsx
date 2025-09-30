@@ -11,8 +11,9 @@ const initialItems = [
     "Tokyo, Japan 🗾", 
     "Willing to commute 🚗", 
     "Software Engineer 💻", 
+    "Application Developer 💡",
     "Full Stack Developer 📋", 
-    "23 Years Old 🍰"
+    "24 Years Old 🍰"
 ];
 
 const PersonalInfo = () => {

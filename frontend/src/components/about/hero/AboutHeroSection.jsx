@@ -22,12 +22,12 @@ const AboutHeroSection = () => {
     {
       id: 2,
       question: "Do you know frontend, backend, or both?",
-      answer: "Mainly frontend development, but I've worked with a handful of backend technologies through school and work. I've used databases like MongoDB, MySQL, and AWS, and have experience with Python and Django too.",
+      answer: "Mainly frontend development, but I've worked with a handful of backend technologies through school and work. I've used databases like MongoDB, MySQL, and AWS, and have experience with Python and Django too. However, I now code mainly in Java at my current company.",
     },
     {
       id: 3,
       question: "Where are you based?",
-      answer: "Currently I am based in Tokyo living with my family. I am only a tourist so I would need a Visa to work full-time.",
+      answer: "I am based in Tokyo, Japan working as an Application Developer for a major IT company.",
     },
     {
       id: 4,
