@@ -13,7 +13,7 @@ import About from "./pages/About"
 import Work from "./pages/Work"
 
 // error page
-import ErrorPage from './pages/ErrorPage'
+import Error from './pages/Error'
 
 // layouts
 import Root from './layouts/root'
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />}/>
       <Route path="work" element={<Work />}/>
 
-      <Route path="*" element={<ErrorPage/>}/>
+      <Route path="*" element={<Error/>}/>
     </Route>
   )
 )
