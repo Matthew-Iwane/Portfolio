@@ -36,7 +36,7 @@ const ResumeHeroSection = () => {
                             id="thinking-emoji"
                             style={{ left: `${cursorCoord.left}px` }}
                         />
-                        <h1><span>Job Related</span> Information</h1>
+                        <h1>Resume & <span>Skills</span></h1>
                     </div>
                     <div className="resume-subheading">
                         <p>

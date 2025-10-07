@@ -39,7 +39,7 @@ const AboutHeroSection = () => {
   return (
     <div className="about-hero-section">
       <div className="about-hero-desc-container">
-        <p className="about-header"><span>More</span> about <span>me</span> and my professional <span>qualifications</span>!</p>
+        <p className="about-header"><span>More</span> about <span>me</span> and other <span>common questions</span>!</p>
         <img src={studying} alt="" className="man-drawing-graph-image"/>
       </div>
 
