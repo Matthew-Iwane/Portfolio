@@ -32,7 +32,12 @@ const AboutHeroSection = () => {
     {
       id: 4,
       question: "What tech stack do you use?",
-      answer: "MERN Stack, MongoDB's BSON data format lets me store almost anything I need, and communicating with it via Express and Node is straightforward. React’s hooks, state management, and routing make building dynamic applications simple and efficient.",
+      answer: "MERN Stack, MongoDB's BSON data format lets me store almost anything I need, and communicating with it via Express and Node is straightforward. React's hooks, state management, and routing make building dynamic applications simple and efficient.",
+    },
+    {
+      id: 5,
+      question: "Are you studying anything right now?",
+      answer: "Yes! I'm currently working in the Salesforce ecosystem, studying both the platform and its programming language, Apex. Since Apex is similar to Java, it's been a smooth transition for me.",
     },
   ]
 

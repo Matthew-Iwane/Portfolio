@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-*::-webkit-scrollbar {
-  display: none; /* Hides the scrollbar for the specified element */
-}
-
 :root {
   line-height: 1.5;
   font-weight: 400;
