@@ -7,12 +7,9 @@ import { Reorder } from "framer-motion";
 import { Item } from "../../shared/grabbableItems/Item";
 
 const initialItems = [
-    "323 356 4113 📞", 
     "Tokyo, Japan 🗾", 
-    "Willing to commute 🚗", 
     "Software Engineer 💻", 
     "Application Developer 💡",
-    "Full Stack Developer 📋", 
     "24 Years Old 🍰"
 ];
 

@@ -14,9 +14,8 @@ const initialItems = [
     "Full Stack Development", 
     "Software Engineering", 
     "Fundamentals of Web Development", 
-    "Introduction to Databases", 
-    "Computer Systems Fundamentals", 
-    "Application Development"
+    "Natural Language Processing",
+    "Data Structures & Algorithms",
 ];
 
 const School = () => {
