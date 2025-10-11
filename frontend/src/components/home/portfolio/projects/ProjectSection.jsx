@@ -14,6 +14,8 @@ import art_book_collective from "../../../../assets/projects/spark/art-book-coll
 import little_lemon from "../../../../assets/projects/little_lemon/little_lemon_hero.png"
 import job_board from "../../../../assets/projects//job_board/splangoJobs.png"
 import ei5 from "../../../../assets/projects/ei5/ei5.png"
+import ii5 from "../../../../assets/projects/ii-5/ii5.png"
+import aimlabz from "../../../../assets/projects/aimlabz/aimlabz.png"
 
 import coming_soon from "../../../../assets/projects/coming_soon.jpg"
 
@@ -24,6 +26,8 @@ const getImageSrc = {
   "Art Book Collective" : art_book_collective,
   "Little Lemon" : little_lemon,
   "Job Board" : job_board,
+  "AimLabz" : aimlabz,
+  "ii-5.com" : ii5,
 }
 
 const LinkVariants = {
