@@ -7,8 +7,7 @@ import { useState, useEffect } from "react"
 
 // Firebase
 import { collection, getDocs, orderBy, query } from "firebase/firestore"; 
-import { db, storage } from "./../../../../firebase.config.js"
-import { getDownloadURL, ref, list } from "firebase/storage"
+import { db } from "./../../../../firebase.config.js"
 
 // CSS
 import "./module.Portfolio.css"
@@ -51,23 +50,32 @@ const Portfolio = () => {
       }, []);
 
       useEffect(() => {
-        const fetchImageUrls = async () => {
-          try {
-            const spaceRef = ref(storage);
-            const img = await list(spaceRef);
-            const urls = await Promise.all(
-              img.items.map(async (itemRef) => {
-                return await getDownloadURL(itemRef);
-              })
-            );
+        // Define your local image paths here
+        // Update these filenames to match your actual image files in /public/images/experiences
+        const experienceImages = [
+          '/images/experience/aws.png',
+          '/images/experience/bootstrap.png',
+          '/images/experience/css.png',
+          '/images/experience/figma.webp',
+          '/images/experience/graphql.png',
+          '/images/experience/html.png',
+          '/images/experience/javascript.png',
+          '/images/experience/mongodb.png',
+          '/images/experience/mysql.png',
+          '/images/experience/nextjs.png',
+          '/images/experience/node.png',
+          '/images/experience/python.png',
+          '/images/experience/react.png',
+          '/images/experience/sql.png',
+          '/images/experience/tailwind.png',
+          '/images/experience/typescript.svg',
+
+          // Add all your experience images here
+          // You can name them according to the technology/tool they represent
+          // e.g., '/images/experience/react.png', '/images/experience/firebase.png', etc.
+        ];
         
-            setExperienceData(urls)
-          } catch (error) {
-            console.error("Error fetching image URLs:", error);
-          }
-        };
-        
-        fetchImageUrls();
+        setExperienceData(experienceImages);
       }, []);
 
 
