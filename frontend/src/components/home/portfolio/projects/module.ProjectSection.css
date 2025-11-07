@@ -19,7 +19,7 @@
 /* Cards */
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Reduced from 300px to 260px */
     align-items: center;
 
     padding: 1em;
@@ -33,15 +33,13 @@
     align-items: center;
     flex-direction: column;
 
-    /* width: 400px; */
-
     border: 1px solid rgb(239, 239, 239);
-    border-radius: 12px;
+    border-radius: 10px; /* Slightly smaller radius */
 
     overflow: hidden;
 
-    padding-bottom: 1em;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.250);
+    padding-bottom: 0.8em; /* Slightly less padding */
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.2); /* Lighter shadow */
 
     cursor: pointer;
 
@@ -54,14 +52,14 @@
 
 
 .card-image {
-    height: 300px;
+    height: 250px; /* Reduced from 300px to 250px */
 }
 
 .card-name {
-    font-size: 20px;
+    font-size: 18px; /* Reduced from 20px */
     font-weight: 600;
 
-    padding: 1em 1em;
+    padding: 0.8em 0.8em; /* Slightly less padding */
 }
 
 .tags-container {
@@ -70,16 +68,16 @@
 
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6em;
+    gap: 0.5em; /* Slightly smaller gap */
     
-    padding: 0 2em;
+    padding: 0 1.5em; /* Less horizontal padding */
 }
 
 .tags {    
     border: 1px solid black;
-    border-radius: 20px;
-    padding: 2px 6px;
-    font-size: 14px;
+    border-radius: 18px; /* Slightly smaller radius */
+    padding: 2px 5px; /* Slightly less padding */
+    font-size: 13px; /* Slightly smaller font */
 }
 
 .tags:hover {

@@ -18,10 +18,9 @@
 
 .experience-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    /* grid-template-rows: repeat(auto-fill, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Increased to 130px */
     align-items: center;
-    grid-gap: 1em;
+    grid-gap: 1em; /* Back to original gap */
     padding: 1em;
 }
 
@@ -32,27 +31,47 @@
     flex-direction: column;
 
     border: 1px solid rgb(239, 239, 239);
-    border-radius: 12px;
+    border-radius: 10px; /* Medium radius */
 
     overflow: hidden;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.250);
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.2); /* Medium shadow */
+    
+    /* Add aspect ratio to keep cards square */
+    aspect-ratio: 1/1;
 }
 
 .experience-card-name {
-    font-size: 20px;
+    font-size: 16px; /* Medium font size */
     font-weight: 600;
 
-    padding: 1em 1em;
+    padding: 0.7em 0.7em;
 }
 
 .experience-img {
     width: 100%;
     height: 100%;
+    object-fit: contain; /* Ensures images fit nicely within the card */
+    padding: 12px; /* Medium padding */
 }
 
 /* Media Queries */
 @media screen and (max-width: 1210px) {
     .experience-container {
         width: 60%;
+    }
+    
+    .experience-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); /* Slightly smaller on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experience-container {
+        width: 80%;
+    }
+    
+    .experience-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Smaller for mobile */
+        grid-gap: 0.8em;
     }
 }
