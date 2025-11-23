@@ -28,12 +28,12 @@ export const HeroSection = () => {
       id: 1,
       company: "Vigience",
       position: "Application Developer",
-      period: "Dec 2025 - Present",
+      period: "Nov 2025 - Present",
       location: "Tokyo, Japan · In Person",
       description: "Developing enterprise solutions using Salesforce platform technologies",
       learnings: "Still early days, but gaining experience in CRM solutions, cloud computing, and working in a diverse team.",
       technologies: ["Apex", "SOQL", "Salesforce", "Lightning Web Components"],
-      highlights: ["Onboarding and initial training phase" ]
+      highlights: ["Onboarding and initial training phase. Currently obtaining Salesforce certifications and learning SAP components. " ]
     },
     {
       id: 2,
