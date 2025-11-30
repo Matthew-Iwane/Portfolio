@@ -31,9 +31,9 @@ export const HeroSection = () => {
       period: "Nov 2025 - Present",
       location: "Tokyo, Japan · In Person",
       description: "Developing enterprise solutions using Salesforce platform technologies",
-      learnings: "Still early days, but gaining experience in CRM solutions, cloud computing, and working in a diverse team.",
-      technologies: ["Apex", "SOQL", "Salesforce", "Lightning Web Components"],
-      highlights: ["Onboarding and initial training phase. Currently obtaining Salesforce certifications and learning SAP components. " ]
+      learnings: "Understanding Salesforce to SAP connections using various connection methods and learning about enterprise application development lifecycle.",
+      technologies: ["Apex", "SOQL", "Salesforce", "SAP"],
+      highlights: ["Onboarding and initial training phase. Currently obtaining Salesforce certifications and learning SAP components." ]
     },
     {
       id: 2,
