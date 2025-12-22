@@ -33,7 +33,11 @@ export const HeroSection = () => {
       description: "Developing enterprise solutions using Salesforce platform technologies",
       learnings: "Understanding Salesforce to SAP connections using various connection methods and learning about enterprise application development lifecycle.",
       technologies: ["Apex", "SOQL", "Salesforce", "SAP"],
-      highlights: ["Onboarding and initial training phase. Currently obtaining Salesforce certifications and learning SAP components." ]
+      highlights: [
+        "Obtained Salesforce Administrator Certification",
+        "Currently working on integrating Salesforce with SAP systems using BAPI and OData services",
+        "Currently studying for Salesforce App Builder Certification" 
+      ]
     },
     {
       id: 2,
@@ -67,7 +71,7 @@ export const HeroSection = () => {
     },
     {
       id: 4,
-      company: "SkyIT GBCS Group",
+      company: "GBCS Group",
       position: "Frontend Engineer Intern",
       period: "May 2023 - Jul 2023",
       location: "Remote",
