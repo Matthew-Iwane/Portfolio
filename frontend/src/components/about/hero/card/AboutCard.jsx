@@ -28,9 +28,9 @@ const AboutCard = ({ question, answer }) => {
             }}
         >
             {isFlipped ? (
-                <p id="answer">{answer}</p>
+                <p className="answer">{answer}</p>
             ) : (
-                <p id="question">{question}</p>
+                <p className="question">{question}</p>
             )}
         </motion.div>
     );

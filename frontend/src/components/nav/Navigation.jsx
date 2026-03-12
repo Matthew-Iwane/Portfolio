@@ -49,18 +49,15 @@ export const Navigation = () => {
         </NavLink>
         <nav className="nav-items">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="resume">Resume</NavLink>
-          <NavLink to="about">About</NavLink>
-          <NavLink to="work">Work</NavLink>
+          <NavLink to="/resume">Resume</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/work">Work</NavLink>
         </nav>
 
         {/* Hamburger Menu Navigation Menu */}
         <motion.nav
           className="hamburger-menu"
           animate={isOpen ? "open" : "closed"}
-          // variants={SidebarVarients}
-          // initial="inital"
-          // whileInView="animate"
         >
           <div className="sidebar-nav-container">
             <div className="hamburger-menu-button-div">
@@ -82,13 +79,13 @@ export const Navigation = () => {
                 <NavLink onClick={handleClick} to="/">
                   Home
                 </NavLink>
-                <NavLink onClick={handleClick} to="resume">
+                <NavLink onClick={handleClick} to="/resume">
                   Resume
                 </NavLink>
-                <NavLink onClick={handleClick} to="about">
+                <NavLink onClick={handleClick} to="/about">
                   About
                 </NavLink>
-                <NavLink onClick={handleClick} to="work">
+                <NavLink onClick={handleClick} to="/work">
                   Work
                 </NavLink>
               </div>

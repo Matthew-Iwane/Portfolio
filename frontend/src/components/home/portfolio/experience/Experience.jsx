@@ -48,21 +48,24 @@ const Experience = ( { images }) => {
       {!imagesLoaded ? (
           <Loader />
         ) : (
-          images.map((img, id) => (
-            <motion.div 
-              className="experience-card" 
-              key={id}
-              variants={ExperienceVariants}
-              initial="initial"
-              whileInView="animate"
-              custom={id}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <img src={img} alt="programming tool icon" className="experience-img" />
-            </motion.div>
-          ))
+          images.map((img, id) => {
+            const name = img.split('/').pop().split('.')[0];
+            return (
+              <motion.div
+                className="experience-card"
+                key={id}
+                variants={ExperienceVariants}
+                initial="initial"
+                whileInView="animate"
+                custom={id}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <img src={img} alt={`${name} icon`} className="experience-img" />
+              </motion.div>
+            );
+          })
         )}
       </div>
     </div>

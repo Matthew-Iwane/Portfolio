@@ -12,7 +12,7 @@ import bu_course_search from "../../../../assets/projects/bu_course_search/bu-co
 import exercise_tracker from "../../../../assets/projects/exercise_tracker/exercise-tracker.png"
 import art_book_collective from "../../../../assets/projects/spark/art-book-collective.png"
 import little_lemon from "../../../../assets/projects/little_lemon/little_lemon_hero.png"
-import job_board from "../../../../assets/projects//job_board/splangoJobs.png"
+import job_board from "../../../../assets/projects/job_board/splangoJobs.png"
 import ei5 from "../../../../assets/projects/ei5/ei5.png"
 import ii5 from "../../../../assets/projects/ii-5/ii5.png"
 import aimlabz from "../../../../assets/projects/aimlabz/aimlabz.png"

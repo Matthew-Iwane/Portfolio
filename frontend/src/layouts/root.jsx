@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { Navigation } from '../components/nav/Navigation' 
 
-const root = () => {
+const Root = () => {
   return (
     <div className="root-layout">
       <header>
@@ -14,4 +14,4 @@ const root = () => {
   )
 }
 
-export default root
+export default Root

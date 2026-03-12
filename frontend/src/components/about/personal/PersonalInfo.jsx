@@ -1,7 +1,5 @@
 import "./module.PersonalInfo.css"
 
-// import { motion } from "framer-motion"
-
 import { useState } from "react";
 import { Reorder } from "framer-motion";
 import { Item } from "../../shared/grabbableItems/Item";

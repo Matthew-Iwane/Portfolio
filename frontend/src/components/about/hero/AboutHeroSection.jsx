@@ -4,12 +4,7 @@ import "./module.AboutHeroSection.css"
 // Card Component
 import AboutCard from "./card/AboutCard.jsx"
 
-// Framer Motion
-// import { motion } from "framer-motion"
-
 // Image Imports
-// import healthy_lifestyle from "../../../assets/healthy_lifestyle.svg"
-// import digital_nomad from "../../../assets/pfp/digital_nomad.svg"
 import studying from "../../../assets/pfp/studying.svg"
 
 const AboutHeroSection = () => {
@@ -45,11 +40,10 @@ const AboutHeroSection = () => {
     <div className="about-hero-section">
       <div className="about-hero-desc-container">
         <p className="about-header"><span>More</span> about <span>me</span> and other <span>common questions</span>!</p>
-        <img src={studying} alt="" className="man-drawing-graph-image"/>
+        <img src={studying} alt="person studying at a desk" className="man-drawing-graph-image"/>
       </div>
 
-      <div className="faq-container ">
-        {/* <h1>Job Questions &#128193;</h1> */}
+      <div className="faq-container">
         {QnA.map(({ id, question, answer }) => (
           <AboutCard
             key={id}

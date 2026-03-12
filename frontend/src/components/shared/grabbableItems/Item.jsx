@@ -1,28 +1,25 @@
 import { useMotionValue, Reorder, useDragControls, motion } from "framer-motion";
 import { ReorderIcon } from "./Icon";
 
+const ItemVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  }
+}
+
 export const Item = ({ item }) => {
   const y = useMotionValue(0);
   const dragControls = useDragControls();
 
-  const ItemVarients = {
-    initial: {
-      opacity: 0,
-      y: 100,
-    },
-    animate: (index) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.05 * index
-      }
-    })
-  }
-
   return (
-    <motion.div 
+    <motion.div
       whileHover={{scale:1.1}}
-      variants={ItemVarients}
+      variants={ItemVariants}
       initial="initial"
       whileInView="animate"
       viewport={{

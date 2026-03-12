@@ -1,6 +1,3 @@
-// import { Link } from "react-router-dom"
-// import astronaut from "../../../assets/astronaut.svg";\
-
 import programming from "../../../assets/programming.svg"
 
 import { RxDoubleArrowDown } from "react-icons/rx";
@@ -18,7 +15,7 @@ import { useState } from "react";
 import gif from "../../../assets/gifs/dance.gif"
 
 const HeroSection = () => {
-  const [cursorCoord, setCursorCoord] = useState({ left: 0, top: 0 })
+  const [cursorCoord, setCursorCoord] = useState({ left: 0 })
 
   function handleMouseMove(e) {
     setCursorCoord({ left: e.clientX })
@@ -50,7 +47,7 @@ const HeroSection = () => {
               <motion.a
                 href="https://www.linkedin.com/in/matthew-iwane/"
                 target="_blank"
-                // transition={{ delay: 1 }}
+                rel="noopener noreferrer"
                 whileHover={{ translateY: "-10px" }}
               >
                 <FaLinkedinIn />
@@ -59,6 +56,7 @@ const HeroSection = () => {
               <motion.a
                 href="https://github.com/Matthew-Iwane"
                 target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ translateY: "-10px" }}
               >
                 <PiGithubLogoFill />

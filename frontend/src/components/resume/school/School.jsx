@@ -1,7 +1,4 @@
-// Image imports
-// import bu_emblem from "../../../assets/pfp/bu_emblem.png"
 import bu_emblem_circle from "../../../assets/pfp/bu_emblem_circle.png"
-
 
 // CSS
 import "./module.School.css"

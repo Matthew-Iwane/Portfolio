@@ -20,7 +20,7 @@ import { useState } from "react";
 import code_thinking from "../../../assets/code_thinking.svg"
 
 const ResumeHeroSection = () => {
-    const [cursorCoord, setCursorCoord] = useState({ left: 0, top: 0 })
+    const [cursorCoord, setCursorCoord] = useState({ left: 0 })
 
     function handleMouseMove(e) {
       setCursorCoord({ left: e.clientX })
@@ -48,7 +48,7 @@ const ResumeHeroSection = () => {
                         <motion.a
                             href="https://www.linkedin.com/in/matthew-iwane/"
                             target="_blank"
-                            // transition={{ delay: 1 }}
+                            rel="noopener noreferrer"
                             whileHover={{ translateY: "-10px" }}
                         >
                             <FaLinkedinIn />
@@ -56,7 +56,8 @@ const ResumeHeroSection = () => {
 
                         <motion.a
                             href="https://github.com/Matthew-Iwane"
-                            target="_blank" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ translateY: "-10px" }}
                         >
                             <PiGithubLogoFill />

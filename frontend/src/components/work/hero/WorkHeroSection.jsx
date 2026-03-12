@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 // React Imports
 import { useState, useEffect } from "react";
 
-export const HeroSection = () => {
+const WorkHeroSection = () => {
 
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -260,4 +260,4 @@ export const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default WorkHeroSection

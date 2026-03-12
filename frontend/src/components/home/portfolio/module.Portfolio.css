@@ -35,8 +35,11 @@
     padding: 1em;
 }
 
-.portfolio-buttons div {
+.portfolio-buttons button {
     cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
 
     font-weight: 300;
     font-size: 36px;
@@ -59,7 +62,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 1440px) {
-    .portfolio-buttons div {
+    .portfolio-buttons button {
         font-size: 26px;
     }
 }
@@ -94,7 +97,7 @@
     .portfolio-buttons {
         width: 80%;
     }
-    .portfolio-buttons div {
+    .portfolio-buttons button {
         font-size: 22px;
     }
 }
