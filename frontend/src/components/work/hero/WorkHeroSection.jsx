@@ -28,30 +28,33 @@ const WorkHeroSection = () => {
       id: 1,
       company: "Vigience",
       position: "Application Developer",
-      period: "Nov 2025 - Present",
+      period: "Oct 2025 - Present",
       location: "Tokyo, Japan · In Person",
       description: "Developing enterprise solutions using Salesforce platform technologies",
       learnings: "Understanding Salesforce to SAP connections using various connection methods and learning about enterprise application development lifecycle.",
       technologies: ["Apex", "SOQL", "Salesforce", "SAP"],
       highlights: [
-        "Obtained Salesforce Administrator Certification",
-        "Currently working on integrating Salesforce with SAP systems using BAPI and OData services",
-        "Currently studying for Salesforce App Builder Certification" 
+        "Salesforce Certified Administrator",
+        "Architected Salesforce-SAP S/4HANA integration handling 10,000+ SKUs using OData and SOAP APIs, reducing reconciliation from 8 hours to real-time",
+        "Building custom Agentforce AI skills and automation workflows using Salesforce Einstein AI",
+        "Developing Apex backend logic and TypeScript Lightning Web Components for production enterprise apps"
       ]
     },
     {
       id: 2,
-      company: "SkillYah",
-      position: "Software Engineer",
+      company: "ei5.jp",
+      position: "Founding Engineer",
       period: "Aug 2023 - Sep 2025",
       location: "Remote · Full Time",
-      description: "Led major technical initiatives including Next.js migration and TypeScript conversion while building real-time features",
-      learnings: "Learned full-stack development, learned the importance of performance optimization for SEO, and gained expertise in managing large-scale codebase migrations.",
-      technologies: ["Next.js", "TypeScript", "Express.js", "WebSocket", "React"],
+      description: "Built an AI-powered English assessment platform from scratch, delivering 500+ paid tests to Japanese professionals across 5 proficiency levels",
+      learnings: "Gained deep expertise in NLP pipeline design, GPT-4o evaluation frameworks, production AI resilience patterns, and defense-in-depth access control architecture.",
+      technologies: ["Next.js", "TypeScript", "GPT-4o", "Whisper", "Supabase"],
       highlights: [
-        "Migrated from React to Next.js, increasing organic traffic by 30%",
-        "Achieved 90% test coverage, reducing production bugs by 50%",
-        "Built real-time chat application using WebSocket"
+        "Engineered NLP scoring pipeline using Whisper speech signals (WPM, pause analysis, ASR confidence) as objective anchors for GPT-4o evaluation",
+        "Designed 3 GPT-4o evaluation frameworks with structured rubric scoring and bilingual JP/EN feedback generation",
+        "Built resilient AI pipeline with retry logic and exponential backoff — reducing grading from 45 min to 2 min per assessment",
+        "Architected dual-portal system with public testing interface and RLS-secured admin portal for grader workflows",
+        "Implemented defense-in-depth access control with middleware auth, token validation, and IP-based rate limiting"
       ]
     },
     {
