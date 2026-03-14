@@ -55,6 +55,7 @@ const Portfolio = () => {
               link: doc.data().link,
               name: doc.data().project_name,
               tools: doc.data().project_tools,
+              description: doc.data().project_description || doc.data().description || null,
             }));
 
             setProjectData(projectData);

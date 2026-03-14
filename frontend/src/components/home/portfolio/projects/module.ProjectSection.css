@@ -1,86 +1,241 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* ── Container ─────────────────────────────────── */
 .projects-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
     width: 100%;
-    height: auto;
-
-    padding-bottom: 4em;
+    padding: 2em 3em 4em;
+    position: relative;
 }
 
-/* Cards */
-.cards-container {
+/* ── Grid ──────────────────────────────────────── */
+.cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Reduced from 300px to 260px */
-    align-items: center;
-
-    padding: 1em;
-
-    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    border: 1px solid rgb(239, 239, 239);
-    border-radius: 10px; /* Slightly smaller radius */
-
+/* ── Card ──────────────────────────────────────── */
+.project-card {
+    background: #ffffff;
+    border-radius: 16px;
     overflow: hidden;
-
-    padding-bottom: 0.8em; /* Slightly less padding */
-    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.2); /* Lighter shadow */
-
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     cursor: pointer;
-
-    color: black;
+    will-change: transform;
 }
 
-.card:hover {
-    border: 1px solid rgba(78, 78, 78, 0.596);
-}
-
-
-.card-image {
-    height: 250px; /* Reduced from 300px to 250px */
-}
-
-.card-name {
-    font-size: 18px; /* Reduced from 20px */
-    font-weight: 600;
-
-    padding: 0.8em 0.8em; /* Slightly less padding */
-}
-
-.tags-container {
+.card-img-wrapper {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #ebebeb;
+}
 
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.project-card:hover .card-img {
+    transform: scale(1.04);
+}
+
+.card-body {
+    padding: 1em 1.2em 1.3em;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.55em;
+}
+
+.card-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em; /* Slightly smaller gap */
-    
-    padding: 0 1.5em; /* Less horizontal padding */
+    gap: 0.4em;
 }
 
-.tags {    
-    border: 1px solid black;
-    border-radius: 18px; /* Slightly smaller radius */
-    padding: 2px 5px; /* Slightly less padding */
-    font-size: 13px; /* Slightly smaller font */
+.tag {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #444;
+    background: #f5f5f5;
 }
 
-.tags:hover {
-    background-color: rgb(226, 226, 226);
+.tag-more {
+    background: #e0e0e0;
+    font-weight: 600;
+    color: #222;
+}
+
+/* ── Backdrop ──────────────────────────────────── */
+.card-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    z-index: 100;
+}
+
+/* ── Expanded container (centers the card) ─────── */
+.card-expanded-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+    pointer-events: none;
+    padding: 1.5em;
+}
+
+/* ── Expanded Card ─────────────────────────────── */
+.card-expanded {
+    pointer-events: all;
+    position: relative;
+    display: flex;
+    width: min(880px, 100%);
+    max-height: 88vh;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28);
+}
+
+.card-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+    background: rgba(0, 0, 0, 0.07);
+    border: none;
+    border-radius: 50%;
+    font-size: 15px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    color: #333;
+    transition: background 0.18s;
+    font-family: inherit;
+}
+
+.card-close-btn:hover {
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.expanded-left {
+    width: 52%;
+    flex-shrink: 0;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+
+.expanded-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.expanded-right {
+    flex: 1;
+    padding: 2.4em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+    overflow-y: auto;
+    min-width: 0;
+}
+
+.expanded-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.25;
+    padding-right: 2em;
+}
+
+.expanded-description {
+    font-size: 13.5px;
+    color: #555;
+    line-height: 1.75;
+}
+
+.expanded-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45em;
+}
+
+.expanded-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    background: #1a1a1a;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 0.65em 1.4em;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.18s, transform 0.15s;
+    align-self: flex-start;
+    margin-top: auto;
+    font-family: inherit;
+}
+
+.expanded-link-btn:hover {
+    background: #333;
+    transform: translateX(3px);
+    color: #ffffff;
+}
+
+/* ── Media Queries ─────────────────────────────── */
+@media (max-width: 1000px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 680px) {
+    .projects-container {
+        padding: 1.5em 1.2em 3em;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+
+    .card-expanded {
+        flex-direction: column;
+        max-height: 90vh;
+    }
+
+    .expanded-left {
+        width: 100%;
+        height: 200px;
+        flex-shrink: 0;
+    }
+
+    .expanded-right {
+        padding: 1.6em 1.4em 1.4em;
+    }
+
+    .expanded-title {
+        font-size: 18px;
+    }
 }
