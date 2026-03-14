@@ -57,13 +57,12 @@ const ProjectSection = ({ data, loader }) => {
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [])
 
+  if (loader) return <div className="projects-container"><Loader /></div>
+
   return (
     <div className="projects-container">
       <div className="cards-grid">
-        {loader ? (
-          <Loader />
-        ) : (
-          data.map((p, index) => (
+        {data.map((p, index) => (
             <motion.div
               key={p.id}
               layoutId={`card-${p.id}`}
@@ -100,7 +99,7 @@ const ProjectSection = ({ data, loader }) => {
               </div>
             </motion.div>
           ))
-        )}
+        }
       </div>
 
       <AnimatePresence>
