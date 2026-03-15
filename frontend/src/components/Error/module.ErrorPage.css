@@ -1,45 +1,42 @@
 .error-page {
-    height: 75vh;
+    position: relative;
+    height: calc(100vh - 60px);
+    width: 100%;
+    overflow: hidden;
+}
 
+.canvas-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.error-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
+    align-items: center;
     gap: 1em;
+    font-family: "Poppins", sans-serif;
+    white-space: nowrap;
+    user-select: none;
+    pointer-events: none;
 }
 
-.error-page h1 {
-    color: #f15858;
+.error-content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: rgb(37, 37, 37);
 }
-
-.error-page p {
-    font-size: 24px;
-    margin: 0 2em;
-}
-
-
-.error-page span:nth-child(1) {
-    font-weight: bold;
-}
-
-.error-page span:nth-child(2) {
-    text-decoration: underline;
-}
-
-.error-page span:nth-child(3) {
-    font-style: italic;
-}
-
 
 #sad-marshmallow {
-    width: 250px;
-    height: 250px;
+    width: 180px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 400px) {
-    .error-page p {
-        font-size: 20px;
-    }
+.error-content p {
+    font-size: 1em;
+    color: rgb(37, 37, 37);
+}
+
+.error-content span {
+    color: #f15858;
+    font-weight: 600;
 }
