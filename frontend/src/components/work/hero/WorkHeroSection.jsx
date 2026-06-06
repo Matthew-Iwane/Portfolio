@@ -26,22 +26,6 @@ const WorkHeroSection = () => {
   const workExperiences = [
     {
       id: 1,
-      company: "Vigience",
-      position: "Application Developer",
-      period: "Oct 2025 - Present",
-      location: "Tokyo, Japan · Contract",
-      description: "Developing enterprise solutions using Salesforce platform technologies",
-      learnings: "Understanding Salesforce to SAP connections using various connection methods and learning about enterprise application development lifecycle.",
-      technologies: ["Apex", "SOQL", "Salesforce", "SAP"],
-      highlights: [
-        "Salesforce Certified Administrator",
-        "Architected Salesforce-SAP S/4HANA integration handling 10,000+ SKUs using OData and SOAP APIs, reducing reconciliation from 8 hours to real-time",
-        "Building custom Agentforce AI skills and automation workflows using Salesforce Einstein AI",
-        "Developing Apex backend logic and TypeScript Lightning Web Components for production enterprise apps"
-      ]
-    },
-    {
-      id: 2,
       company: "SkillYah - ei5.jp",
       position: "Software Engineer",
       period: "Aug 2023 - Sep 2025",
@@ -58,7 +42,7 @@ const WorkHeroSection = () => {
       ]
     },
     {
-      id: 3,
+      id: 2,
       company: "FORGE Design Studios",
       position: "Frontend Engineer Intern",
       period: "Jul 2023 - Sep 2023",
@@ -73,7 +57,7 @@ const WorkHeroSection = () => {
       ]
     },
     {
-      id: 4,
+      id: 3,
       company: "GBCS Group",
       position: "Frontend Engineer Intern",
       period: "May 2023 - Jul 2023",
@@ -88,7 +72,7 @@ const WorkHeroSection = () => {
       ]
     },
     {
-      id: 5,
+      id: 4,
       company: "Open Source Recruiter",
       position: "Software Engineer Intern",
       period: "Mar 2021 - Apr 2023",
