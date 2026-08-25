@@ -45,14 +45,59 @@
     justify-content: center;
 }
 
-.school-info-desc h1:nth-child(1) {
+.school-info-desc h1 {
     font-size: 44px;
 }
-.school-info-desc h1:nth-child(2) {
-    font-size: 32px;
+
+/* Degrees */
+.degree-list {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1em;
 }
-.school-info-desc p {
-    font-size: 22px;
+
+.degree {
+    padding-left: 1em;
+    border-left: 3px solid rgb(197, 82, 82);
+}
+
+.degree + .degree {
+    margin-top: 1.4em;
+}
+
+.degree h2 {
+    font-size: 26px;
+    line-height: 1.25;
+
+    margin: 0;
+}
+
+.degree p {
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6em;
+
+    margin: 0.35em 0 0;
+
+    color: #666;
+}
+
+.degree-badge {
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    padding: 0.25em 0.9em;
+
+    border-radius: 100px;
+
+    color: rgb(197, 82, 82);
+    background-color: rgba(197, 82, 82, 0.1);
 }
 
 .bu-img-container {
@@ -130,8 +175,28 @@
         font-size: 3.2vw;
     }
 
-    .school-info-desc p {
-        font-size: 2.8vw;
+    .degree-list {
+        align-items: center;
+    }
+
+    .degree {
+        padding-left: 0;
+        padding-top: 0.8em;
+
+        text-align: center;
+
+        border-left: none;
+        border-top: 3px solid rgb(197, 82, 82);
+    }
+
+    .degree h2 {
+        font-size: 2.6vw;
+    }
+
+    .degree p {
+        font-size: 2.2vw;
+
+        justify-content: center;
     }
 
 
@@ -157,7 +222,11 @@
     .related-coursework span {
         font-size: 12px;
     }
-}  
+
+    .degree-badge {
+        font-size: 11px;
+    }
+}
 
 @media screen and (max-width: 478px) {
 
@@ -171,8 +240,16 @@
         font-size: 18px;
     }
 
-    .school-info-desc p {
-        font-size: 12px
+    .degree h2 {
+        font-size: 15px;
+    }
+
+    .degree p {
+        font-size: 12px;
+    }
+
+    .degree-badge {
+        font-size: 10px;
     }
 
     .related-coursework h2 {

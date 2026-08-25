@@ -26,6 +26,24 @@ const WorkHeroSection = () => {
   const workExperiences = [
     {
       id: 1,
+      company: "Vigience",
+      position: "Software Engineer",
+      period: "Nov 2025 - Present",
+      location: "Tokyo, Japan · On-site · Full Time",
+      description: "Developing enterprise solutions using Salesforce platform technologies",
+      learnings: "Understanding Salesforce to SAP connections using various connection methods, automating developer workflows with custom tooling, and learning about the enterprise application development lifecycle.",
+      technologies: ["Apex", "SOQL", "JavaScript", "Salesforce", "SAP"],
+      highlights: [
+        "Salesforce Certified Administrator and Platform Developer I",
+        "Built JavaScript automation scripts for Salesforce component metadata retrieval, streamlining developer workflow",
+        "Architected Salesforce-SAP S/4HANA integration handling 10,000+ SKUs using OData and SOAP APIs, reducing reconciliation from 8 hours to real-time",
+        "Testing and validating components across the Salesforce component library",
+        "Building custom Agentforce AI skills and automation workflows using Salesforce Einstein AI",
+        "Developing Apex backend logic and TypeScript Lightning Web Components for production enterprise apps"
+      ]
+    },
+    {
+      id: 2,
       company: "SkillYah - ei5.jp",
       position: "Software Engineer",
       period: "Aug 2023 - Sep 2025",
@@ -42,7 +60,7 @@ const WorkHeroSection = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       company: "FORGE Design Studios",
       position: "Frontend Engineer Intern",
       period: "Jul 2023 - Sep 2023",
@@ -57,7 +75,7 @@ const WorkHeroSection = () => {
       ]
     },
     {
-      id: 3,
+      id: 4,
       company: "GBCS Group",
       position: "Frontend Engineer Intern",
       period: "May 2023 - Jul 2023",
@@ -72,7 +90,7 @@ const WorkHeroSection = () => {
       ]
     },
     {
-      id: 4,
+      id: 5,
       company: "Open Source Recruiter",
       position: "Software Engineer Intern",
       period: "Mar 2021 - Apr 2023",

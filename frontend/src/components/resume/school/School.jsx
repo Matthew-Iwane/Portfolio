@@ -24,8 +24,21 @@ const School = () => {
                 <div className="school-info-container">
                     <div className="school-info-desc">
                         <h1>Boston University</h1>
-                        <h1>Computer Science</h1>
-                        <p>Bachelor of Arts - May 2024</p>
+
+                        <div className="degree-list">
+                            <div className="degree">
+                                <h2>Computer Science &amp; Artificial Intelligence</h2>
+                                <p>
+                                    Master of Science - Expected May 2027
+                                    <span className="degree-badge">In Progress</span>
+                                </p>
+                            </div>
+
+                            <div className="degree">
+                                <h2>Computer Science</h2>
+                                <p>Bachelor of Arts - May 2024</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="bu-img-container">
 
