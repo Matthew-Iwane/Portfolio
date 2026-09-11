@@ -32,7 +32,7 @@ const WorkHeroSection = () => {
       location: "Tokyo, Japan · On-site · Full Time",
       description: "Developing enterprise solutions using Salesforce platform technologies",
       learnings: "Understanding Salesforce to SAP connections using various connection methods, automating developer workflows with custom tooling, and learning about the enterprise application development lifecycle.",
-      technologies: ["Apex", "SOQL", "JavaScript", "Jest Testing","Salesforce",],
+      technologies: ["Apex", "SOQL", "JavaScript", "Jest Testing", "Salesforce", "SAP S/4HANA", "SAP ECC"],
       highlights: [
         "Built JavaScript automation scripts for Salesforce component metadata retrieval, streamlining developer workflow",
         "Architected Salesforce-SAP S/4HANA integration handling 10,000+ SKUs using OData and SOAP APIs, reducing reconciliation from 8 hours to real-time",
